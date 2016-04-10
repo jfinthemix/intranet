@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="ingresarSubsistema.jsp" partName="ingresarSubsistema.jsp" title="ingresarSubsistema.jsp" tooltip="proyecto_uoct/WebContent/mantenedorSubsistemas/ingresarSubsistema.jsp">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto_uoct/WebContent/mantenedorSubsistemas/ingresarSubsistema.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4592" selectionTopPixel="1443"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VentasAction.java" partName="VentasAction.java" title="VentasAction.java" tooltip="proyecto_uoct/src/proyecto_uoct/ventas/controller/VentasAction.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto_uoct/src/proyecto_uoct/ventas/controller/VentasAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="23138" selectionTopPixel="7119"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VentasDAO.java" partName="VentasDAO.java" title="VentasDAO.java" tooltip="EJBproyecto_uoct/ejbModule/proyecto_uoct/dao/VentasDAO.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EJBproyecto_uoct/ejbModule/proyecto_uoct/dao/VentasDAO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="26099" selectionTopPixel="9906"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VentasBean.java" partName="VentasBean.java" title="VentasBean.java" tooltip="EJBproyecto_uoct/ejbModule/proyecto_uoct/ventas/model/VentasBean.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EJBproyecto_uoct/ejbModule/proyecto_uoct/ventas/model/VentasBean.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3768" selectionTopPixel="1348"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VentasLocal.java" partName="VentasLocal.java" title="VentasLocal.java" tooltip="proyecto_uoct/src/proyecto_uoct/ventas/model/VentasLocal.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/proyecto_uoct/src/proyecto_uoct/ventas/model/VentasLocal.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="875" selectionTopPixel="94"/>
+</editor>
+<editor/>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

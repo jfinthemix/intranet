@@ -1,0 +1,17 @@
+h1 {
+	font-family: Arial, Impact;
+	font-size: 16px;
+}
+p {
+	font-size: 12px;
+	list-style-type: disc;
+}
+body {
+	font-family: Arial, Impact;
+	font-size: 12px;
+	font-style: normal;
+}
+h2 {
+	font-size: 14px;
+	font-style: italic;
+}

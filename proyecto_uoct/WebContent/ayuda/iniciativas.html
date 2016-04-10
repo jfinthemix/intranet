@@ -1,0 +1,658 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ayuda Iniciativas de Inversión</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="estiloAyuda.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Modulo de Iniciativas de Inversi&oacute;n </h1>
+<p>Las iniciativas de inversi&oacute;n son proyectos que tienen una duraci&oacute;n 
+  de al menos un a&ntilde;o y que generan un libro de obras.<br>
+  La idea de este m&oacute;dulo es manejar la informaci&oacute;n m&aacute;s relevante 
+  de estas iniciativas, como el equipo de trabajo, la fecha de inicio, la fecha 
+  de termino, y toda la documentaci&oacute;n relacionada( Ordenes de trabajo, 
+  notas al libro de obras, etc). Adem&aacute;s se puede hacer una descripci&oacute;n 
+  de la iniciativa y poner a disposici&oacute;n de los usuarios una serie de documentos 
+  que sirvan para ayudar a los usuarios a adquirir m&aacute;s conocimiento respecto 
+  al tema.</p>
+<p>Para el manejo de la documentaci&oacute;n se usa la agenda de clientes del 
+  &quot;modulo de documentaci&oacute;n&quot;.</p>
+<p>Una OT maneja distintos estados, </p>
+<p>INICIADA: Primer estado de una OT que corresponde a cuando la OT es emitida.<br>
+  SUSCRITA: Es cuando la entidad encargada de la ejecuci&oacute;n asume la labor 
+  de realizar la orden de trabajo.<br>
+  OBRAS FINALIZADAS: Cuando la entidad que ejecuta las obras da aviso de su finalizaci&oacute;n.<br>
+  APROBADA: Cuando la UOCT aprueba la finalizaci&oacute;n de la OT.</p>
+<p>Cada uno de estos estados tiene asociada una fecha ( fecha de inicio, fecha 
+  de suscripci&oacute;n, fecha de finalizaci&oacute;n de obras y fecha de aprobaci&oacute;n), 
+  siendo la &uacute;ltima fecha registrada la que rige el estado de la OT.</p>
+<ol>
+  <li>Iniciativa 
+    <ul>
+      <li><a href="#regIni">Registrar Iniciativa</a></li>
+      <li><a href="#editarIni">Editar Iniciativa</a></li>
+      <li><a href="#finalizarIni">Finalizar Iniciativa</a></li>
+      <li><a href="#adminDocsIni">Administrar Documentos de la Iniciativa</a></li>
+      <li><a href="#buscarIni">Buscar Iniciativas</a></li>
+    </ul>
+  </li>
+  <li>OT 
+    <ul>
+      <li><a href="#regOT">Registrar OT</a></li>
+      <li><a href="#editarOT">Editar OT</a></li>
+      <li><a href="#editarFechaOT">Editar Fechas OT</a></li>
+      <li><a href="#borrarOT">Borrar OT</a></li>
+      <li><a href="#buscarOT">Buscar OT</a></li>
+    </ul>
+  </li>
+  <li>NLO 
+    <ul>
+      <li><a href="#regNLOIni">Registrar NLO a Iniciativa</a></li>
+      <li><a href="#regNLOOT">Registrar NLO a OT</a></li>
+      <li><a href="#editarNLOINI">Editar NLO de Iniciativa</a></li>
+      <li><a href="#editarNLOOT">Editar NLO de OT</a></li>
+      <li><a href="#eliminarNLOIni">Eliminar NLO de Iniciativa</a></li>
+      <li><a href="#eliminarNLOOT">Eliminar NLO de OT</a></li>
+      <li><a href="#eliminarNLOOT">Buscar NLO</a></li>
+    </ul>
+  </li>
+</ol>
+<hr>
+<h1>1.Iniciativa </h1>
+<blockquote> 
+  <p><a name="regIni">Registrar Iniciativa</a></p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Registrar Iniciativa&quot; desde la 
+      secci&oacute;n &quot;Iniciativas de Inv.&quot; en el men&uacute; de la intranet, 
+      con lo que se mostrar&aacute; un formulario para el ingreso de los datos 
+      de la nueva iniciativa.</li>
+    <li>Ingresar los datos de la nueva iniciativa. Los Datos requeridos son: </li>
+    <ul>
+      <li><strong>T&iacute;tulo</strong>: Corresponde a un identificador de la 
+        iniciativa. <em>Es obligatorio indicar el t&iacute;tulo</em>.</li>
+      <li><strong>Cliente</strong>: Corresponde a la persona( perteneciente a 
+        una entidad externa o no), encargada de la ejecuci&oacute;n de las obras. 
+        Para seleccionarlo se debe pinchar el enlace &quot;Buscar Cliente&quot; 
+        con lo que se abrir&aacute; una ventana para realizar la b&uacute;squeda. 
+        <em>Es obligatorio indicar el cliente</em>.</li>
+      <li><strong>Fecha de inicio</strong>: Fecha en que se inicia la iniciativa. 
+        <em>Es obligatorio indicar la fecha</em>.</li>
+      <li><strong>Descripci&oacute;n</strong>: Una breve rese&ntilde;a de la iniciativa.</li>
+      <li><strong>Equipo de trabajo</strong>: Corresponde a las personas de la 
+        UOCT que participar&aacute;n en la iniciativa. <u>Se deben incluir desde 
+        las personas encargadas de registrar la documentaci&oacute;n asociada 
+        ( Ordenes de trabajo, Notas al libro de obras, etc.), hasta el encargado 
+        del proyecto.</u> <br>
+        Para seleccionar al equipo de trabajo se debe escoger uno a uno a los 
+        participantes desde la lista disponible de personas de la UOCT, y presionar 
+        el bot&oacute;n &quot;agregar&quot;, con lo que se agrega a la lista de 
+        la derecha ( equipo de trabajo). Es obligatorio indicar el equipo de trabajo.</li>
+      <li><strong>Encargado</strong>: Es la persona responsable del proyecto. 
+        Solamente esta persona puede administrar los datos y documentos de la 
+        iniciativa. Adem&aacute;s, solamente el encargado puede ingresar la fecha 
+        de finalizaci&oacute;n de la iniciativa<strong>.</strong></li>
+      <li><strong>Fondos totales</strong>: Presupuesto total de la iniciativa.</li>
+      <li><strong>Fondos anuales</strong>: Fondos presupuestados anualmente para 
+        la iniciativa. Adem&aacute;s este campo puede ser utilizado para registrar 
+        comentarios relacionados precisamente con el presupuesto del proyecto.</li>
+    </ul>
+    <li>Presionar el bot&oacute;n &quot;registrar&quot; al final del formulario.</li>
+    <li>La intranet mostrar&aacute; un mensaje de confirmaci&oacute;n del ingreso 
+      de la iniciativa.</li>
+  </ol>
+  <p><a name="editarIni">Editar Iniciativa</a></p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; desde la secci&oacute;n 
+      &quot;Iniciativas de Inv.&quot; en el men&uacute; de la intranet, con lo 
+      que se mostrar&aacute; una lista de las Iniciativas iniciadas en el a&ntilde;o 
+      en transcurso.</li>
+    <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+      el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+    <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+      Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+      NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;, sin embargo 
+      se habilitar&aacute;n los links correspondientes a cada una de las funciones 
+      solamente para las personas que tengan las atribuciones correspondientes. 
+    </li>
+    <li>Seleccione la opci&oacute;n &quot;editar Datos&quot; de la iniciativa 
+      que desee editar.</li>
+    <li>Se mostrar&aacute; un formulario con los datos de la iniciativa. Los datos 
+      editables de una iniciativa son: </li>
+    <ul>
+      <li>Titulo</li>
+      <li>Cliente</li>
+      <li>Descripci&oacute;n</li>
+      <li>Equipo de trabajo</li>
+      <li>Encargado</li>
+      <li>Fondos totales</li>
+      <li>Fondos anuales</li>
+    </ul>
+    <li>Realice la edici&oacute;n de los datos de la iniciativa y presione el 
+      bot&oacute;n &quot;actualizar datos&quot; para finalizar.</li>
+  </ol>
+  <p><a name="finalizarIni">Finalizar Iniciativa</a></p>
+  <ol>
+    <li>Solo el usuario registrado como encargado de la iniciativa puede finalizar 
+      iniciativa. </li>
+    <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; desde la secci&oacute;n 
+      Iniciativas de Inv. en el men&uacute; de la intranet, con lo que se mostrar&aacute; 
+      una lista de las Iniciativas iniciadas en el a&ntilde;o en transcurso.</li>
+    <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+      el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+    <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+      Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+      NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;.</li>
+    <li>Seleccione la opci&oacute;n &quot;Finalizar iniciativa&quot;</li>
+    <li>Ingrese la fecha de finalizaci&oacute;n de la iniciativa.</li>
+    <li>Deber&aacute; confirmar 3 veces para que la iniciativa sea cerrada definitivamente.</li>
+  </ol>
+  <p><a name="adminDocsIni">Administrar Documentos de la Iniciativa</a></p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; desde la secci&oacute;n 
+      Iniciativas de Inv. en el men&uacute; de la intranet, con lo que se mostrar&aacute; 
+      una lista de las Iniciativas iniciadas en el a&ntilde;o en transcurso.</li>
+    <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+      el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+    <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+      Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+      NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;, sin embargo 
+      se habilitar&aacute;n los links correspondientes a cada una de las funciones 
+      solamente para las personas que tengan las atribuciones correspondientes. 
+    </li>
+    <li>Seleccione la opci&oacute;n &quot;admin. Documentos&quot; de la iniciativa 
+      que se desee.</li>
+    <li>Se mostrar&aacute; una lista de los documentos de la iniciativa con la 
+      opci&oacute;n eliminar para cada uno de ellos. Adem&aacute;s se podr&aacute; 
+      ingresar un nuevo documento presionando el bot&oacute;n &quot;examinar&quot;, 
+      buscar el documento en el equipo local, y presionar el bot&oacute;n &quot;registrar&quot;.</li>
+  </ol>
+  <p><a name="buscarIni">Buscar Iniciativas</a></p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Busca Iniciativas&quot; desde la secci&oacute;n 
+      Iniciativas de Inv. en el men&uacute; de la intranet, con lo que se mostrar&aacute; 
+      una lista de las Iniciativas iniciadas en el a&ntilde;o en transcurso.</li>
+    <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+      el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+    <li>Las iniciativas listadas ofrecen, por medio de un link en el nombre de 
+      la iniciativa la opci&oacute;n de mostrar el detalle de la iniciativa y 
+      desde aqui navegar entre las OTs de la iniciativa, las NLO de la iniciativa 
+      y las NLO de cada una de las OT.</li>
+  </ol>
+</blockquote>
+<hr>
+<h1>2. OT </h1>
+<ul>
+  <blockquote> 
+    <p><a name="regOT">Registrar OT</a></p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Registrar OT&quot; desde la secci&oacute;n 
+        Iniciativas de Inv. en el men&uacute; de la intranet, con lo que se mostrar&aacute; 
+        una lista de las Iniciativas iniciadas en el a&ntilde;o en transcurso.</li>
+      <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+        el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+      <li>Cada iniciativa listada muestra un link a &quot;Reg.OT&quot; solamente 
+        si el usuario es parte del equipo de trabajo y tiene asociada la funcionalidad 
+        de registrar OT.Cliquee el link al lado de la iniciativa a la cual desea 
+        asociar la nueva OT.</li>
+      <li>Se mostrar&aacute; un formulario compuesto por dos partes: </li>
+      <ul>
+        <li><em><strong>Datos relacionados con la OT </strong></em> 
+          <ul>
+            <li><strong>Nombre de la OT</strong>: Titulo de la Orden de Trabajo. 
+              Corresponde al identificador de la orden y perfectamente se puede 
+              hacer coincidir con el codigo del documento, por ejemplo &quot; 
+              OT-3445&quot;.</li>
+            <li><strong>Iniciativa asociada</strong>: Iniciativa a la cual pertenece 
+              esta OT.</li>
+            <li><strong>Cliente</strong>: Persona a qui&eacute;n va dirigida la 
+              OT( en caso de ser un despacho de documentaci&oacute;n). Generalmente 
+              corresponde a la persona encargada de la ejecuci&oacute;n del proyecto. 
+              Debe estar previamente registrada en la agenda de Clientes del m&oacute;dulo 
+              de documentaci&oacute;n.</li>
+            <li><strong>Personas a Cargo</strong>: Personal de la UOCT que emite 
+              la OT. </li>
+            <li><strong>Fecha de la OT</strong>: Es la fecha en que fue redactada 
+              la OT.</li>
+            <li><strong>Plazo de Ejecuci&oacute;n</strong>: Cantidad de d&iacute;as 
+              para ejecutar la obra.</li>
+            <li><strong>Fecha de plazo de la Ejecuci&oacute;n</strong>: Fecha 
+              en que venceel plazo de ejecuci&oacute;n de la Obra.</li>
+            <li><strong>Cobro EP</strong>: Identificador del estado de pago con 
+              el que se cancela la OT.</li>
+          </ul>
+        </li>
+        <li><strong><em>Datos relacionados con el documento</em></strong>: Estos 
+          son los mismos datos usados en el m&oacute;dulo de documentaci&oacute;n 
+          para el despacho de documentos. 
+          <ul>
+            <li><strong>C&oacute;digo del Documento</strong>: Corresponde al identificador 
+              del documento. Se debe escoger el tipo de documento desde una lista 
+              y dogotar el identificador de &eacute;ste.</li>
+            <li><strong>Materia</strong>: Corresponde a una frase que describe 
+              el tema del documento.</li>
+            <li><strong>Fecha de egreso</strong>: Fecha en que se despacha desde 
+              la UOCT.</li>
+            <li><strong>Anterior</strong>: Documentos relacionados. Se seleccionan 
+              desde una ventana emergente que mustra un buscador, luego de pinchar 
+              el link &quot;Buscar&quot;.</li>
+            <li><strong>Resumen del documento</strong>: Breve descripci&oacute;n 
+              del documento.</li>
+            <li><strong>Subir Documento</strong>: Se pueden anexar hasta tres 
+              archivos para cada registro de documentaci&oacute;n. Para cada uno 
+              de ellos se debe, 
+              <ul>
+                <li>Tickear la casilla correspondiente</li>
+                <li>Presionar el bot&oacute;n examinar que se habilita luego de 
+                  tickear la casilla.</li>
+                <li>Buscar el documento localmente.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <li>Presione el bot&oacute;n &quot;guardar&quot; al final del formulario.</li>
+    </ol>
+    <p>Tambi&eacute;n es posible acceder al registro de OT por medio de la siguiente 
+      secuencia:</p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativas&quot; desde la 
+        secci&oacute;n Iniciativas de Inv. en el men&uacute; de la intranet, con 
+        lo que se mostrar&aacute; una lista de las Iniciativas iniciadas en el 
+        a&ntilde;o en transcurso.</li>
+      <li>Si la iniciativa a la cual se desea asociar una OT no se encuentra en 
+        la lista, seleccione el a&ntilde;o de inicio de la iniciativa y presione 
+        el bot&oacute;n &quot;buscar&quot;.</li>
+      <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+        Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+        NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;.</li>
+      <li>Seleccionar la opci&oacute;n &quot;admin. OT&quot;, con lo que se mostrar&aacute; 
+        una lista de las OT registradas, adem&aacute;s de un enlace &quot;Registrar 
+        Nueva OT&quot;.</li>
+      <li>Al pinchar el enlace &quot;Registrar Nueva OT&quot;, se mostrar&aacute; 
+        finalmente el mismo formulario anteriormente descrito para el registro 
+        de la OT.</li>
+    </ol>
+    <p>&nbsp; </p>
+    <p><a name="editarOT">Editar OT</a></p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; en la secci&oacute;n 
+        &quot;Iniciativas&quot; en el men&uacute; de la intranet.</li>
+      <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+        el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+      <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+        Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+        NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;.</li>
+      <li>Seleccionar la opci&oacute;n &quot;<u>admin.OT</u>&quot;, con lo que 
+        se mostrar&aacute; una lista con las OT de la iniciativa.En la lista de 
+        OT de la iniciativa, cada una tiene las opciones &quot;editar Fechas&quot;, 
+        &quot;Editar NLO de OT&quot; y &quot;Borrar OT&quot;.</li>
+      <li>Seleccione la opci&oacute;n &quot;<u>Editar OT</u>&quot;. Con lo que 
+        se mostrar&aacute; un formulario para editar los datos de la OT. Los datos 
+        editables de una OT son: </li>
+      <ul>
+        <li> Cliente.</li>
+        <li>Persona a cargo.</li>
+        <li>Fecha de la OT.</li>
+        <li>Plazo de Ejecuci&oacute;n.</li>
+        <li>Fecha de plazo de Ejecuci&oacute;n.</li>
+        <li>Cobro EP.</li>
+        <li>Estado de la OT.</li>
+      </ul>
+      <li>Editar los datos que se requiera en el formulario y presionar el bot&oacute;n 
+        &quot;Guardar&quot;.</li>
+    </ol>
+    <p><a name="editarFechaOT">Editar Fechas de OT</a></p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; en la secci&oacute;n 
+        &quot;Iniciativas&quot; en el men&uacute; de la intranet.</li>
+      <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+        el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+      <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+        Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+        NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;.</li>
+      <li>Seleccionar la opci&oacute;n &quot;admin.OT&quot;.</li>
+      <li>En la lista de OT de la iniciativa, cada una tiene las opciones &quot;editar 
+        Fechas&quot;, &quot;Editar NLO de OT&quot; y &quot;Borrar OT&quot;.</li>
+      <li>Seleccionar la opci&oacute;n &quot;editar Fechas&quot; con lo que se 
+        mostrar&aacute; un formulario con campos para ingresar o editar las cinco 
+        fechas que maneja cada una de las OT:Fecha de OT, Fecha de Suscripci&oacute;n,Fecha 
+        de Finalizaci&oacute;n de Tareas y Fecha de Aprobaci&oacute;n.<br>
+        <em>Debe considerar que luego de que se modifican las fechas, el sistema 
+        eval&uacute;a el estado de la OT correspondiete a las fechas ingresadas.</em></li>
+      <li>Luego de ingresar o editar las fechas, presione el bot&oacute;n &quot;Guardar&quot;. 
+        <p><em>Despu&eacute;s de registrar una NLO tambi&eacute;n se mostrar&aacute; 
+          la pantalla de Edici&oacute;n de Fechas de la OT</em></p>
+      </li>
+    </ol>
+    <p><a name="borrarOT">Borrar OT</a></p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; en la secci&oacute;n 
+        &quot;Iniciativas&quot; en el men&uacute; de la intranet.</li>
+      <li>Si la iniciativa que se desea editar no se encuentra en la lista, seleccione 
+        el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n &quot;buscar&quot;.</li>
+      <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+        Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+        NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;.</li>
+      <li>Seleccionar la opci&oacute;n &quot;admin.OT&quot;, con lo que se mostrar&aacute; 
+        una lista de OT asociadas a la iniciativa. En la lista de OT de la iniciativa, 
+        cada una tiene las opciones &quot;editar Fechas&quot;, &quot;Editar NLO 
+        de OT&quot; y &quot;Borrar OT&quot;.</li>
+      <li>Seleccione la opci&oacute;n &quot;Borrar OT&quot; de la OT que desea 
+        eliminar, y posteriormente confirme la eliminaci&oacute;n en las solicitudes 
+        de confirmaci&oacute;n que se mostrar&aacute;n. Luego de responder a la 
+        confirmaci&oacute;n que solicita el sistema, <strong>no es posible recuperar 
+        la OT borrada.</strong></li>
+    </ol>
+    <p><a name="buscarOT">Buscar OT</a></p>
+    <p>Ya que las OT pertenecen a una iniciativa, es factible conocer cada una 
+      de las OT por dos formas distintas:</p>
+    <blockquote> 
+      <p>Primera forma:</p>
+      <ol>
+        <li>Seleccione la opci&oacute;n &quot;Buscar OT&quot; en la secci&oacute;n 
+          &quot;Iniciativas de inv.&quot; en el menu de la intranet.</li>
+        <li>Ingrese los par&aacute;metros de b&uacute;squeda de OT. Los par&aacute;metros 
+          disponibles para la b&uacute;squeda son: </li>
+        <ul>
+          <li><strong>Palabra clave</strong>: Se buscar&aacute;n coincidencias 
+            de la palabra clave ingresada con el Nombre de la OT, con el nombre 
+            de la Iniciativa y con el estado de pago.</li>
+          <li><strong>Estado de la OT</strong>: Se muestra una lista con los estados 
+            de OT.</li>
+          <li><strong>Fecha de vencimiento</strong>: Cada OT tiene asociada una 
+            fecha de vencimiento, la cual fue indicada al momento de registrar 
+            la OT en el sistema.</li>
+        </ul>
+        <li>Presione el bot&oacute;n &quot;buscar&quot;.</li>
+        <li>Se mostrar&aacute; una lista con las OT coincidentes con los par&aacute;metros 
+          de b&uacute;squeda, mostrando las opciones de ver detalle de la OT y 
+          del proyecto al cual pertenece cada una de las OT de la lista.</li>
+      </ol>
+      <p>Segunda Forma</p>
+      <ol>
+        <li>Realice la operaci&oacute;n &quot;<a href="#buscarIni">Buscar Iniciativas</a>&quot;.</li>
+        <li>Una vez en el detalle de la iniciativa se muestra una lista con las 
+          OT pertenecientes a la iniciativa con la opci&oacute;n de ver el detalle 
+          de cada una de ellas.</li>
+      </ol>
+    </blockquote>
+  </blockquote>
+</ul>
+<hr>
+<h1> 3.NLO</h1>
+<p>Una NLO puede ir asociada directamente a una iniciativa de inversi&oacute;n, 
+  o puede ir asociada a una OT, siendo esta &uacute;ltima la m&aacute;s com&uacute;n. 
+  Estas asociaciones son excluyentes entre si.</p>
+  
+<ul>
+  <blockquote> 
+    <p><a name="regNLOIni">Registrar NLO a Iniciativa</a></p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Registrar NLO&quot; en la secci&oacute;n 
+        &quot;Iniciativas de Inv.&quot; del men&uacute; de la aplicaci&oacute;n 
+        con lo que se mostrar&aacute; una lista de las Iniciativas iniciadas en 
+        el a&ntilde;o en transcurso.</li>
+      <li>Si la iniciativa que se busca asociar con la OT no se encuentra en la 
+        lista, seleccione el a&ntilde;o de inicio de la iniciativa y presione 
+        el bot&oacute;n &quot;buscar&quot;.</li>
+      <li> <em><strong>Una NLO puede estar asociada a una OT o directamente a 
+        una Iniciativa</strong></em>. En la lista de iniciativas encontradas se 
+        muestra la opci&oacute;n &quot;Registrar NLO a OT&quot; y &quot;Registrar 
+        NLO a Iniciativa&quot;.</li>
+      <li>Al seleccionar la opci&oacute;n &quot;Registrar NLO a Iniciativa&quot; 
+        se mostrar&aacute; un formulario para el ingreso de los datos de la NLO. 
+        Los datos que se pueden ingresar son: </li>
+      <ul>
+        <li><strong><em>Datos relacionados con la NLO</em></strong><em>: <br>
+          </em> 
+          <ul>
+            <li><strong>Fecha de la NLO</strong>: Fecha en que la NLO fue redactada.</li>
+            <li><strong>Descripci&oacute;n</strong>: Descripci&oacute;n de la 
+              NLO.<br>
+            </li>
+          </ul>
+        </li>
+        <li><strong><em>Datos relacionados con el documento</em></strong><em>: 
+          <br>
+          </em> 
+          <ul>
+            <li><strong>C&oacute;digo del documento</strong>: Se debe escoger 
+              el tipo de documento desde una lista de opciones disponibles, adem&aacute;s 
+              de digitar el c&oacute;digo mismo del documento.</li>
+            <li><strong>Personas a cargo</strong>: Personal de la UOCT responsables 
+              del documento.</li>
+            <li><strong>Materia</strong>: Corresponde a una frase que describe 
+              el tema del documento.</li>
+            <li><strong>Fecha de recepci&oacute;n o despacho</strong>: Corresponde 
+              a la fecha en que el documento fue recibido en UOCT( si corresponde 
+              a una NLO entrante) o a la fecha de despacho ( si corresponde a 
+              una NLO saliente).</li>
+            <li><strong>Anterior</strong>: Documentos relacionados. Se seleccionan 
+              desde una ventana emergente que mustra un buscador, luego de pinchar 
+              el link &quot;Buscar&quot;.</li>
+            <li><strong>Resumen del documento</strong>: Breve descripci&oacute;n 
+              del documento.</li>
+            <li><strong>Subir Documento</strong>: Se pueden anexar hasta tres 
+              archivos para cada registro de documentaci&oacute;n. Para cada uno 
+              de ellos se debe, 
+              <ul>
+                <li>Tickear la casilla correspondiente</li>
+                <li>Presionar el bot&oacute;n examinar que se habilita luego de 
+                  tickear la casilla.</li>
+                <li>Buscar el documento localmente.<br>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <li>Presione el bot&oacute;n &quot;Guardar&quot; al final del formulario.</li>
+    </ol>
+    <p>A parte de la secuencia anterior, es posible hacer un registro de NLO por 
+      medio de los siguientes pasos:</p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativas&quot; desde la 
+        secci&oacute;n Iniciativas de Inv. en el men&uacute; de la intranet, con 
+        lo que se mostrar&aacute; una lista de las Iniciativas iniciadas en el 
+        a&ntilde;o en transcurso.</li>
+      <li>Si la iniciativa a la cual se desea asociar una OT no se encuentra en 
+        la lista, seleccione el a&ntilde;o de inicio de la iniciativa y presione 
+        el bot&oacute;n &quot;buscar&quot;.</li>
+      <li>Cada una de las Iniciativas listadas posee las opciones de &quot;editar 
+        Datos&quot;, &quot;admin. Documentos&quot;,&quot;admin. OT&quot;,&quot;admin 
+        NLO de la Iniciativa&quot;. y &quot;finalizar Iniciativa&quot;.</li>
+      <li>Seleccionar la opci&oacute;n &quot;admin. NLO de la Iniciativa&quot;,con 
+        lo que se mostrar&aacute; una lista con las NLO de la iniciativa y un 
+        link &quot;Registrar Nueva NLO a la Iniciativa&quot;.</li>
+      <li>Pinchar el link &quot;Registrar Nueva NLO a la Iniciativa&quot;, con 
+        lo que se mostrar&aacute; el formulario descrito anteriormente. </li>
+      <li>Registrar los datos de la nueva NLO en el formulario y cliquear el bot&oacute;n 
+        &quot;Guardar&quot; al final del Formulario.</li>
+    </ol>
+    <p><a name="regNLOOT">Registrar NLO a OT</a></p>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Registrar NLO&quot; en la secci&oacute;n 
+        &quot;Iniciativas de Inv.&quot; del men&uacute; de la aplicaci&oacute;n 
+        con lo que se mostrar&aacute; una lista de las Iniciativas iniciadas en 
+        el a&ntilde;o en transcurso.</li>
+      <li>Si la iniciativa que se busca asociar con la OT no se encuentra en la 
+        lista, seleccione el a&ntilde;o de inicio de la iniciativa y presione 
+        el bot&oacute;n &quot;buscar&quot;.</li>
+      <li> Una NLO puede estar asociada a una OT o directamente a una NLO.En la 
+        lista de iniciativas encontradas se muestra la opci&oacute;n &quot;Registrar 
+        NLO a OT&quot; y &quot;Registrar NLO a Iniciativa&quot;.</li>
+      <li>Al seleccionar la opci&oacute;n &quot;<u>Registrar NLO a OT</u>&quot; 
+        se mostrar&aacute; una lista con las OT de la iniciativa seleccionada 
+        con la opci&oacute;n de &quot;Registrar NLO&quot; para cada una de las 
+        OT.</li>
+      <li>Seleccione la OT a la cual desea asociar la NLO y pinche la opci&oacute;n 
+        &quot;<u>Registrar NLO</u>&quot;, con lo que se mostrar&aacute; un formulario 
+        para el ingreso de la NLO. En el formulario se mostrar&aacute; la iniciativa 
+        Los datos que se pueden ingresar son: <br>
+      </li>
+    </ol>
+    <ul>
+      <li><strong><em>Datos relacionados con la NLO</em></strong><em>: <br>
+        </em> 
+        <ul>
+          <li><strong>Fecha de la NLO</strong>: Fecha en que la NLO fue redactada.</li>
+          <li><strong>Descripci&oacute;n</strong>: Descripci&oacute;n de la NLO.<br>
+          </li>
+        </ul>
+      </li>
+      <li><strong><em>Datos relacionados con el documento</em></strong><em>: <br>
+        </em> 
+        <ul>
+          <li><strong>C&oacute;digo del documento</strong>: Se debe escoger el 
+            tipo de documento desde una lista de opciones disponibles, adem&aacute;s 
+            de digitar el c&oacute;digo mismo del documento.</li>
+          <li><strong>Personas a cargo</strong>: Personal de la UOCT responsables 
+            del documento.</li>
+          <li><strong>Materia</strong>: Corresponde a una frase que describe el 
+            tema del documento.</li>
+          <li><strong>Fecha de recepci&oacute;n o despacho</strong>: Corresponde 
+            a la fecha en que el documento fue recibido en UOCT( si corresponde 
+            a una NLO entrante) o a la fecha de despacho ( si corresponde a una 
+            NLO saliente).</li>
+          <li><strong>Anterior</strong>: Documentos relacionados. Se seleccionan 
+            desde una ventana emergente que mustra un buscador, luego de pinchar 
+            el link &quot;Buscar&quot;.</li>
+          <li><strong>Resumen del documento</strong>: Breve descripci&oacute;n 
+            del documento.</li>
+          <li><strong>Subir Documento</strong>: Se pueden anexar hasta tres archivos 
+            para cada registro de documentaci&oacute;n. Para cada uno de ellos 
+            se debe, 
+            <ul>
+              <li>Tickear la casilla correspondiente</li>
+              <li>Presionar el bot&oacute;n examinar que se habilita luego de 
+                tickear la casilla.</li>
+              <li>Buscar el documento localmente.<br>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>Presione el bot&oacute;n &quot;Guardar&quot; al final del formulario 
+        <p>6. Ingrese los datos de la NLO al formulario y presione el bot&oacute;n 
+          &quot;Guardar&quot; al final del formulario.</p>
+      </li>
+    </ul>
+    <p>&nbsp;</p>
+    <ul>
+      <blockquote> 
+        <p><a name="editarNLOINI">Editar NLO de Iniciativa</a></p>
+      </blockquote>
+      <ol>
+        <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; en la secci&oacute;n 
+          &quot;Iniciativas de Inv.&quot; del men&uacute; de la aplicaci&oacute;n 
+          con lo que se mostrar&aacute; una lista de las Iniciativas iniciadas 
+          en el a&ntilde;o en transcurso.</li>
+        <li>Si la iniciativa a la que est&aacute; asociada la NLO no se encuentra 
+          en la lista, seleccione el a&ntilde;o de inicio de la iniciativa y presione 
+          el bot&oacute;n &quot;buscar&quot;.Se mostrar&aacute; una lista con 
+          las iniciativas y, entre otras opciones, la de &quot;administrar NLO 
+          de la iniciativa&quot;.</li>
+        <li>Seleccione la opci&oacute;n &quot;Admin. NLO de la iniciativa&quot; 
+          correspondiente a la iniciativa a la que pertenece la NLO que se desea 
+          editar. Con esto se mostrar&aacute; una lista de NLO asociadas a la 
+          iniciativa seleccionada. Cada una de las NLO listadas tiene la opci&oacute;n 
+          &quot;editar NLO&quot;.</li>
+        <li>Seleccionar la opci&oacute;n &quot;Editar NLO&quot; correspondiente 
+          desde la lista desplegada, con lo que se mostrar&aacute; un formulario 
+          con los datos de la NLO. Los datos editables son: 
+          <ul>
+            <li><strong>Descripci&oacute;n de la NLO.</strong></li>
+            <li><strong>Fecha de la NLO.</strong></li>
+          </ul>
+        </li>
+        <li>Edite los datos de la NLO y presione el bot&oacute;n &quot;Guardar&quot; 
+          al final del formulario.</li>
+      </ol>
+      <blockquote> 
+        <p><a name="editarNLOOT">Editar NLO de OT</a></p>
+      </blockquote>
+      <ol>
+        <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; en la secci&oacute;n 
+          &quot;Iniciativas de Inv.&quot; del men&uacute; de la aplicaci&oacute;n 
+          con lo que se mostrar&aacute; una lista de las Iniciativas iniciadas 
+          en el a&ntilde;o en transcurso.</li>
+        <li>Si la iniciativa a la que est&aacute; asociada la OT a la que est&aacute; 
+          asociada la NLO que se desea editar no se encuentra en la lista, seleccione 
+          el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n 
+          &quot;buscar&quot;. Cada una de las iniciativas tiene un link &quot;<u>administrar 
+          OTs</u>&quot;(entre otras).</li>
+        <li>Seleccione la opci&oacute;n &quot;Admin.OT&quot; correspondiente a 
+          la iniciativa a la que pertenece la OT de la NLO que se desea editar, 
+          con lo que se mostrar&aacute; una lista de las OTs asociadas a la iniciativa. 
+          Cada una de las OT tiene un link &quot; editar NLO de OT&quot;.</li>
+        <li>En la lista de OT de la iniciativa ,seleccionar la opci&oacute;n &quot;Editar 
+          NLO de OT &quot; correspondiente.</li>
+        <li>Edite los datos de la NLO y presione el bot&oacute;n &quot;Guardar&quot; 
+          al final del formulario.</li>
+      </ol>
+      <blockquote> 
+        <p><a name="eliminarNLOIni">Eliminar NLO de iniciativa</a></p>
+      </blockquote>
+      <ol>
+        <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; en la secci&oacute;n 
+          &quot;Iniciativas de Inv.&quot; del men&uacute; de la aplicaci&oacute;n 
+          con lo que se mostrar&aacute; una lista de las Iniciativas iniciadas 
+          en el a&ntilde;o en transcurso.</li>
+        <li>Si la iniciativa a la que est&aacute; asociada la NLO no se encuentra 
+          en la lista, seleccione el a&ntilde;o de inicio de la iniciativa y presione 
+          el bot&oacute;n &quot;buscar&quot;.</li>
+        <li>Seleccione la opci&oacute;n &quot;Admin. NLo de la iniciativa&quot; 
+          correspondiente a la iniciativa a la que pertenece la NLO que se desea 
+          editar .</li>
+        <li>Seleccionar la opci&oacute;n &quot;eliminar NLO&quot; correspondiente 
+          a la NLO que desea eliminar y posteriormente confirme la operaci&oacute;n.</li>
+      </ol>
+      <blockquote> 
+        <p></p>
+        <p><a name="eliminarNLOOT">Eliminar NLO de OT</a></p>
+      </blockquote>
+      <ol>
+        <li>Seleccionar la opci&oacute;n &quot;Editar Iniciativa&quot; en la secci&oacute;n 
+          &quot;Iniciativas de Inv.&quot; del men&uacute; de la aplicaci&oacute;n 
+          con lo que se mostrar&aacute; una lista de las Iniciativas iniciadas 
+          en el a&ntilde;o en transcurso.</li>
+        <li>Si la iniciativa a la que est&aacute; asociada la OT a la que est&aacute; 
+          asociada la NLO que se desea editar no se encuentra en la lista, seleccione 
+          el a&ntilde;o de inicio de la iniciativa y presione el bot&oacute;n 
+          &quot;buscar&quot;.</li>
+        <li>Seleccione la opci&oacute;n &quot;Admin.OT&quot; correspondiente a 
+          la iniciativa a la que pertenece la OT de la NLO que se desea editar.</li>
+        <li>En la lista de OT de la iniciativa ,seleccionar la opci&oacute;n &quot;Editar 
+          NLO de OT &quot; correspondiente a la OT a la que pertenece la NLO que 
+          desea editar.</li>
+        <li>Seleccionar la opci&oacute;n &quot;eliminar NLO&quot; correspondiente 
+          a la NLO que desea eliminar y posteriormente confirme la operaci&oacute;n.</li>
+      </ol>
+    </ul>
+    <blockquote> 
+      <p><a name="buscarNLO">Buscar NLO</a></p>
+    </blockquote>
+    <ul>
+      <ol>
+        <li>Seleccione la opci&oacute;n &quot;Buscar NLO&quot; en la secci&oacute;n 
+          Iniciativas de Inv. en el men&uacute; de la intranet.</li>
+        <li>Ingrese los par&aacute;metros de b&uacute;squeda de NLO. Los par&aacute;metros 
+          para la b&uacute;squeda son: </li>
+        <ul>
+          <li></li>
+        </ul>
+        <li>Se mostrar&aacute; una lista con las NLO coincidentes con los par&aacute;metros 
+          de b&uacute;squeda, mostrando el proyecto al cual pertenecen y, en caso 
+          de estar asociados a una OT, tambi&eacute;n mostrar&aacute; su c&oacute;digo.</li>
+      </ol>
+    </ul>
+  </blockquote>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

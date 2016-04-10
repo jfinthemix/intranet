@@ -1,0 +1,27 @@
+<html>
+<head>
+<!-- European format dd-mm-yyyy -->
+<script language="JavaScript" src="calendar1.js" type="text/javascript"></script><!-- Date only with year scrolling -->
+<!-- American format mm/dd/yyyy -->
+
+<script language="JavaScript" src="calendar2.js" type="text/javascript"></script><!-- Date only with year scrolling -->
+
+
+
+</head>
+<body>
+<form name="tstest" method="post" action="">
+<input type="Text" name="input1" value="16-10-2003" disabled >
+				<a href="javascript:cal1.popup();"><img src="img/cal.gif" width="16" height="16" border="0" alt="Click Here to Pick up the date"></a><br>
+</form>
+<script language="JavaScript" type="text/javascript">
+			<!-- // create calendar object(s) just after form tag closed
+				 // specify form element as the only parameter (document.forms['formname'].elements['inputname']);
+				 // note: you can have as many calendar objects as you need for your application
+				var cal1 = new calendar1(document.forms['tstest'].elements['input1']);
+				cal1.year_scroll = true;
+				cal1.time_comp = false;
+							//-->
+			</script>
+</body>
+</html>

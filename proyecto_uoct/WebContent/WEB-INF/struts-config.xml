@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="Form-mulario" type="proyecto_uoct.infoyrep.controller.fileup1ActionForm" />
+    <form-bean name="IngReportajeFBean" type="proyecto_uoct.infoyrep.controller.IngReportajeActionForm" />
+    <form-bean name="formBean" type="proyecto_uoct.documentacion.controller.RegDocFormBean" />
+    <form-bean name="agregarDocProy_fb" type="proyecto_uoct.proyecto.controller.AgregarDocProy_fb" />
+    <form-bean name="InsertDocForoFB" type="proyecto_uoct.foro.controller.InsertDocForoFB" />
+    <form-bean name="usuarioFormBean" type="proyecto_uoct.usuario.controller.UsuarioFormBean" />
+  </form-beans>
+  <action-mappings>
+    <action path="/homeAction" type="proyecto_uoct.controller.homeAction">
+     <forward name="home_fw" path="/home.jsp" />   
+      
+    </action>
+    <action path="/indexAction" type="proyecto_uoct.controller.indexAction">
+      <forward name="index_fw" path="/index.jsp" />
+      <forward name="error" path="/error.jsp" />
+      <forward name="marco_fw" path="/marco.jsp" />
+      <forward name="login_fw" path="/login.jsp" />
+      <forward name="menu_fw" path="/menuDesplegable/menuDesp.jsp" />
+      <forward name="signout" path="/index2Action.do" />
+      <forward name="arriba" path="/arriba.jsp" />
+    </action>
+    <action name="InsertDocForoFB" path="/foro/foroAction" type="proyecto_uoct.foro.controller.foroAction">
+      <forward name="detForo_fw" path="/foro/DetalleForo.jsp" />
+      <forward name="adminTemas_fw" path="/foro/AdministrarTemas.jsp" />
+      <forward name="buscarForo_fw" path="/foro/BuscarForo.jsp" />
+      <forward name="editarForo_fw" path="/foro/EditarForo.jsp" />
+      <forward name="ingresarForo_fw" path="/foro/IngresarForo.jsp" />
+      <forward name="postear_fw" path="/foro/Postear.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+    </action>
+    <action name="IngReportajeFBean" path="/info_instit_y_report/reportAction" type="proyecto_uoct.infoyrep.controller.reportAction">
+      <forward name="detrep_fw" path="/info_instit_y_report/ReportajePortada.jsp" />
+      <forward name="publicarReportaje_fw" path="/info_instit_y_report/PublicarReportajePortada.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="actualizarReportaje_fw" path="/info_instit_y_report/actualizarReportajePortada.jsp" />
+      <forward name="seleccionarReportaje_fw" path="/info_instit_y_report/selecActuReport.jsp" />
+      <forward name="reportajesAnteriores" path="/info_instit_y_report/reportajesAnteriores.jsp" />
+    </action>
+    <action name="usuarioFormBean" path="/usuario/usuarioAction" type="proyecto_uoct.usuario.controller.UsuarioAction">
+      <forward name="aagregarusu_fw" path="/usuario/AgregarUsuario.jsp" />
+      <forward name="editdatpers_fw" path="/usuario/EditarDatosPersonales.jsp" />
+      <forward name="editausu_fw" path="/usuario/EditarUsuario.jsp" />
+      <forward name="listausu_fw" path="/usuario/ListarUsuarios.jsp" />
+      <forward name="informActdelPers_fw" path="/usuario/ListaTodosInformes.jsp" />
+      <forward name="informeact_fw" path="/usuario/InformeActividades.jsp" />
+      <forward name="verdatosusu_fw" path="/usuario/DatosUsuario.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="pag_cambiarcontrasena_fw" path="/usuario/CambiarContrasena.jsp" />
+      <forward name="cuadroAnexos_fw" path="/usuario/cuadroAnexos.jsp" />
+      <forward name="adminAnexos_fw" path="/usuario/adminAnexos.jsp" />
+      <forward name="editarAnexo_fw" path="/usuario/editarAnexo.jsp" />
+      <forward name="adminUsuarios_fw" path="/usuario/adminUsuarios.jsp" />
+      <forward name="actualizarCurriculo_fw" path="/usuario/actualizarCurriculo.jsp" />
+      <forward name="cambiarFoto_fw" path="/usuario/cambiarFoto.jsp" />
+      <forward name="cumpleanos_fw" path="/usuario/cumpleanos.jsp" />
+      <forward name="adminAreas_fw" path="/usuario/adminAreas.jsp" />
+      <forward name="reasignarContrasena_fw" path="/usuario/reasignarContrasena.jsp" />
+    </action>
+    <action path="/documentacion/clienteAction" type="proyecto_uoct.documentacion.controller.clienteAction">
+      <forward name="cargarRegCli_fw" path="/documentacion/RegistrarCliente.jsp" />
+      <forward name="cargarRegEntExt_fw" path="/documentacion/RegistrarEntExt.jsp" />
+      <forward name="cargarBuscarCli_fw" path="/documentacion/BuscarCliente.jsp" />
+      <forward name="detalleCli_fw" path="/documentacion/DetalleCliente.jsp" />
+      <forward name="detalleEnt_fw" path="/documentacion/DetalleEntExt.jsp" />
+      <forward name="editarDatosCli_fw" path="/documentacion/EditarDatosCliente.jsp" />
+      <forward name="BusCli_pop_fw" path="/documentacion/BusCli_pop.jsp" />
+      <forward name="exportarAgenda_fw" path="/documentacion/exportarAgenda.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="listaEntExt_fw" path="/documentacion/listaEntiExt.jsp" />
+      <forward name="editarEntExt_fw" path="/documentacion/editarEntExt.jsp" />
+      <forward name="buscarEntExt_fw" path="/documentacion/buscarEntExt.jsp" />
+      <forward name="buscarParaEditarCli_fw" path="/documentacion/buscaparaEditarCliente.jsp" />
+      <forward name="busParaEdEntExt_fw" path="/documentacion/busparaEdEntExt.jsp" />
+    </action>
+    <action name="formBean" path="/documentacion/documentoAction" type="proyecto_uoct.documentacion.controller.DocumentoAction">
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="RegDocEntrante_fw" path="/documentacion/RegDocEntrante.jsp" />
+      <forward name="detDoc_fw" path="/documentacion/DetalleDocumento.jsp" />
+      <forward name="editarDoc_fw" path="/documentacion/EditarDatosdeDocumento.jsp" />
+      <forward name="RegDocSaliente_fw" path="/documentacion/RegDocSaliente.jsp" />
+      <forward name="adminTiposDoc_fw" path="/documentacion/Tipos_Docs.jsp" />
+      <forward name="abusDoc_fw" path="/documentacion/BuscarDocs.jsp" />
+      <forward name="crearExcel_fw" path="/documentacion/excelDoc.jsp" />
+      <forward name="buscarDocs_pop" path="/documentacion/buscarDocs_pop.jsp" />
+      <forward name="busDocparaEditar_fw" path="/documentacion/busParaEditarDoc.jsp" />
+      <forward name="adminArchivosDeDoc_fw" path="/documentacion/adminArchivosDeDoc.jsp" />
+      <forward name="reservarDoc_fw" path="/documentacion/reservarDoc.jsp" />
+      <forward name="buscarDocsEnt_pop" path="/documentacion/buscarDocsEnt_pop.jsp" />
+      <forward name="buscarDocsSal_pop" path="/documentacion/buscarDocsSal_pop.jsp" />
+      <forward name="docReservado_fw" path="/documentacion/docReservado.jsp" />
+      <forward name="buscarReservas_fw" path="/documentacion/buscarReservas.jsp" />
+    </action>
+    <action path="/eiv/eivAction" type="proyecto_uoct.EIV.controller.eivAction">
+      <forward name="cargarBusEIV_fw" path="/eiv/BuscarEIV.jsp" />
+      <forward name="detEIV_fw" path="/eiv/DetalleEIV.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="registrarEIV_fw" path="/eiv/RegistrarEIV.jsp" />
+      <forward name="editarEIV_fw" path="/eiv/EditarDatosEIV.jsp" />
+      <forward name="bitacoraEIV_fw" path="/eiv/EditarBitacoraEIV.jsp" />
+      <forward name="registrarFlujo_fw" path="/eiv/RegistrarFlujo.jsp" />
+      <forward name="buscarDocOficio_fw" path="/eiv/buscarDocOficio_pop.jsp" />
+      <forward name="a_tiposEIV" path="/eiv/Tipos_EIV.jsp" />
+      <forward name="detEIVyle" path="/eiv/detEIVyle.jsp" />
+      <forward name="detEIVydetEventos" path="/eiv/detEIVydetEventos.jsp" />
+      <forward name="detEIVydetEventyflujos" path="/eiv/detEVIydetEventyflujos.jsp" />
+      <forward name="detEvento" path="/eiv/detalleEvento.jsp" />
+      <forward name="aDespacharEIV_fw" path="/eiv/despacharEIV.jsp" />
+      <forward name="aReingresar_fw" path="/eiv/reingresoEIV.jsp" />
+      <forward name="aAprobRech_fw" path="/eiv/AproRech.jsp" />
+      <forward name="aEnvioEmail_fw" path="/eiv/EnvioEmaill.jsp" />
+      <forward name="adminComunas_fw" path="/eiv/adminComunas.jsp" />
+      <forward name="busParaEditarEIV_fw" path="/eiv/busParaEditarEIV.jsp" />
+      <forward name="envioEmailIngreso_fw" path="/eiv/envioEmailIngreso.jsp" />
+      <forward name="registrarBit_fw" path="/eiv/registrarBitacora.jsp" />
+      <forward name="editarEvento_fw" path="/eiv/editarEvento.jsp" />
+    </action>
+    <action path="/eiv/flujoAction" type="proyecto_uoct.EIV.controller.FlujoAction">
+      <forward name="buscarFlujo_fw" path="/eiv/BuscarFlujo.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="registrarFlujo_fw" path="/eiv/RegistrarFlujo.jsp" />
+    </action>
+    <action name="agregarDocProy_fb" path="/proyectos/proyectoAction" type="proyecto_uoct.proyecto.controller.ProyectoAction">
+      <forward name="busIniciativas_fw" path="/proyectos/busIniciativas.jsp" />
+      <forward name="detalleIni_fw" path="/proyectos/detalleIniciativa.jsp" />
+      <forward name="detalleOT_fw" path="/proyectos/DetalleOT.jsp" />
+      <forward name="regIniciativa_fw" path="/proyectos/registrar_iniciativa.jsp" />
+      <forward name="regOT_fw" path="/proyectos/regOT.jsp" />
+      <forward name="regNLOIni_fw" path="/proyectos/regNLOIni.jsp" />
+      <forward name="adminDocsIni_fw" path="/proyectos/adminDocsIni.jsp" />
+      <forward name="edFechasOT_fw" path="/proyectos/EditarFechasOT.jsp" />
+      <forward name="regNLOOT_fw" path="/proyectos/regNLOOT.jsp" />
+      <forward name="edtiarDatosIni_fw" path="/proyectos/editarDatosIni.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="busParaEditarIni_fw" path="/proyectos/busParaEditarIni.jsp" />
+      <forward name="adminIni_fw" path="/proyectos/adminIniciativa.jsp" />
+      <forward name="busIniToOT_fw" path="/proyectos/busIniToOT.jsp" />
+      <forward name="busInitoNLO_fw" path="/proyectos/busInitoNLO.jsp" />
+      <forward name="otsDelProy_fw" path="/proyectos/otsDelProy.jsp" />
+      <forward name="buscarOT_fw" path="/proyectos/buscarOT.jsp" />
+      <forward name="buscarNLO_fw" path="/proyectos/buscarNLO.jsp" />
+      <forward name="adminOTs_fw" path="/proyectos/adminOTs.jsp" />
+      <forward name="finalizarIni_fw" path="/proyectos/finalizarIni.jsp" />
+      <forward name="editarOT_fw" path="/proyectos/editarOT.jsp" />
+      <forward name="adminNLOs_fw" path="/proyectos/adminNLOs.jsp" />
+      <forward name="editarNLO_fw" path="/proyectos/editarNLO.jsp" />
+      <forward name="adminNLOsOT_fw" path="/proyectos/adminNLOsOT.jsp" />
+    </action>
+    <action input="/recursos/listarRecursos.jsp" path="/recursos/recursosAction" type="proyecto_uoct.reservas.controller.RecursosAction">
+      <forward name="listarRecursos" path="/recursos/listarRecursos.jsp" />
+      <forward name="verAgenda" path="/recursos/verAgenda.jsp" />
+      <forward name="adminRecursos" path="/recursos/adminRecursos.jsp" />
+      <forward name="editarRecurso" path="/recursos/editarRecurso.jsp" />
+      <forward name="verSala" path="/recursos/verSala.jsp" />
+      <forward name="verAgenda2" path="/recursos/verAgenda2.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="reporte" path="/recursos/reporte.jsp" />
+      <forward name="verSala2" path="/recursos/verSala2.jsp" />
+    </action>
+    <action name="Form-mulario" path="/info_instit_y_report/infoinstitAction" type="proyecto_uoct.infoyrep.controller.InfoinstitAction">
+      <forward name="listarInfo_fw" path="/info_instit_y_report/ListarInformacionInstitucional.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="agregarInfo_fw" path="/info_instit_y_report/AgregarInfoInstitucional.jsp" />
+    </action>
+    <action path="/usuario/perfilAction" type="proyecto_uoct.usuario.controller.perfilAction">
+      <forward name="agregarPerfil_fw" path="/usuario/AgregarPerfil.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="listaPerfiles_fw" path="/usuario/listaPerfiles.jsp" />
+      <forward name="detallePerfil_fw" path="/usuario/detallePerfil.jsp" />
+      <forward name="editarPerfil_fw" path="/usuario/editarPerfil.jsp" />
+    </action>
+    <action path="/inventario/inventarioAction" type="proyecto_uoct.inventario.controller.InventarioAction">
+      <forward name="busItem_fw" path="/inventario/busItem.jsp" />
+      <forward name="busParaEditarItem_fw" path="/inventario/busParaEditarItem.jsp" />
+      <forward name="editarItem_fw" path="/inventario/editarItem.jsp" />
+      <forward name="regItem_fw" path="/inventario/regItem.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+    </action>
+    <action path="/ventas/ventasAction" type="proyecto_uoct.ventas.controller.VentasAction">
+      <forward name="adminTiposVta_fw" path="/ventas/adminTiposVta.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="editarTipoInfoVta_fw" path="/ventas/editarTipoInfoVta.jsp" />
+      <forward name="regCliente_fw" path="/ventas/regCliente.jsp" />
+      <forward name="buscarCliVta_fw" path="/ventas/buscarCliente.jsp" />
+      <forward name="detalleCliente_fw" path="/ventas/detalleCliente.jsp" />
+      <forward name="buscarParaEditarCli_fw" path="/ventas/buscarParaEditarCli.jsp" />
+      <forward name="editarCliente_fw" path="/ventas/editarCliente.jsp" />
+      <forward name="exportarCliVta_fw" path="/ventas/exportarClientes.jsp" />
+      <forward name="busCliVta_pop_fw" path="/ventas/busCliVta_pop.jsp" />
+      <forward name="RegProcesoVta_fw" path="/ventas/RegProcesoVta.jsp" />
+      <forward name="buscarVtas_fw" path="/ventas/buscarVtas.jsp" />
+      <forward name="detalleVenta_fw" path="/ventas/detalleVta.jsp" />
+      <forward name="busParaEditarVenta_fw" path="/ventas/busParaEditarVenta.jsp" />
+      <forward name="editarVenta_fw" path="/ventas/editarVenta.jsp" />
+      <forward name="regEntregaCotiz_fw" path="/ventas/regEntregaCotiz.jsp" />
+      <forward name="regFechaPago_fw" path="/ventas/regFechaPago.jsp" />
+      <forward name="regFechaEntregaInfo_fw" path="/ventas/regEntregaInfo.jsp" />
+      <forward name="actualizarUF_fw" path="/ventas/actualizarUF.jsp" />
+      <forward name="regFechaFin_fw" path="/ventas/regFechaFin.jsp" />
+    </action>
+    <action path="/texto/textoAction" type="proyecto_uoct.controller.textoAction">
+      <forward name="mensaje" path="/texto/texto.jsp" />
+      <forward name="mensajeOperacion" path="/mensaje.jsp" />
+    </action>
+    <action path="/index2Action" type="proyecto_uoct.controller.index2Action">
+      <forward name="index2" path="/index2.jsp" />
+      <forward name="frameDer" path="/frameDer.jsp" />
+      <forward name="arriba" path="/arriba2.jsp" />
+      <forward name="reportajes" path="/reportajes.jsp" />
+      <forward name="mensaje" path="/mensaje.jsp" />
+      <forward name="cuadroanexos" path="/cuadroAnexos.jsp" />
+      <forward name="cumpleanos" path="/cumpleanos.jsp" />
+      <forward name="listarInfo" path="/listarInformacionInstitucional.jsp" />
+      <forward name="reportajesAnteriores" path="/reportajesAnteriores.jsp" />
+    </action>
+    <action path="/mensaje/mensajeAction" type="proyecto_uoct.mensaje.controller.mensajeAction">
+      <forward name="actualizarMensaje" path="/mensaje/actualizarMensaje.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+    </action>
+    <action path="/fallas/fallasAction" type="proyecto_uoct.fallas.controller.fallasAction">
+      <forward name="buscar_falla" path="/fallas/buscar_fallas.jsp" />
+      <forward name="ingresar_falla" path="/fallas/ingresar_fallas.jsp" />
+      <forward name="editar_falla" path="/fallas/editar_fallas.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="leerXml" path="/fallas/leerXml.jsp" />
+      <forward name="aReporte" path="/fallas/reporte.jsp" />
+    </action>
+    <action path="/empmant/empMantAction" type="proyecto_uoct.EmpMant.controller.empMantAction">
+      <forward name="buscar_emp" path="/empmant/buscar_emp.jsp" />
+      <forward name="editar_emp" path="/empmant/editar_emp.jsp" />
+      <forward name="ingresar_emp" path="/empmant/ingresar_emp.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+      <forward name="PopUp" path="/empmant/PopUp.jsp" />
+    </action>
+    <action path="/mantenedorSistemas/sistemaAction" type="proyecto_uoct.mantenedorSistemas.controller.sistemaAction">
+      <forward name="ingresarSistema" path="/mantenedorSistemas/ingresarSistema.jsp" />
+      <forward name="buscarSistema" path="/mantenedorSistemas/buscarSistema.jsp" />
+      <forward name="modificarSistema" path="/mantenedorSistemas/modificarSistema.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+    </action>
+    <action path="/mantenedorSubsistemas/subsistemaAction" type="proyecto_uoct.mantenedorSubsistemas.controller.subsistemaAction">
+      <forward name="ingresarSubsistema" path="/mantenedorSubsistemas/ingresarSubsistema.jsp" />
+      <forward name="buscarSubsistema" path="/mantenedorSubsistemas/buscarSubsistema.jsp" />
+      <forward name="modificarSubsistema" path="/mantenedorSubsistemas/modificarSubsistema.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+    </action>
+    <action path="/mantenedorDispositivos/dispositivoAction" type="proyecto_uoct.mantenedorDispositivos.controller.dispositivoAction">
+      <forward name="ingresarDispositivo" path="/mantenedorDispositivos/ingresarDispositivo.jsp" />
+      <forward name="buscarDispositivo" path="/mantenedorDispositivos/buscarDispositivo.jsp" />
+      <forward name="modificarDispositivo" path="/mantenedorDispositivos/modificarDispositivo.jsp" />
+      <forward name="mensaje_fw" path="/mensaje.jsp" />
+    </action>
+  </action-mappings>
+  <controller maxFileSize="10M" />
+</struts-config>

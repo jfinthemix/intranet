@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ayuda- Ventas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="estiloAyuda.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>M&oacute;dulo de Ventas </h1>
+<p><a href="#gral">General</a></p>
+<ol>
+  <li>Clientes de Ventas 
+    <ul>
+      <li><a href="#regCli">Registrar Clientes</a></li>
+      <li><a href="#editarCli">Editar Clientes</a></li>
+      <li><a href="#buscarCli">Buscar Clientes</a></li>
+    </ul>
+  </li>
+  <li>Tipos de Ventas </li>
+  <ul>
+    <li><a href="#ingresarTipo">Ingresar Tipos de Ventas</a></li>
+    <li><a href="#editarTipo">Editar Tipos de Ventas</a></li>
+  </ul>
+  <li>Ventas 
+    <ul>
+      <li><a href="#regVenta">Registrar Venta</a></li>
+      <li><a href="#editarVenta">Editar Venta</a></li>
+      <li><a href="#regFecha">Registrar Fechas asociadas al proceso de Venta</a></li>
+      <li><a href="#actualizarUF">Actualizar el precio de la UF</a></li>
+    </ul>
+  </li>
+</ol>
+<blockquote> 
+  <hr>
+</blockquote>
+<h1><strong><a name="regCli">GENERAL</a></strong></h1>
+<p>Un proceso de venta es un registro donde se almacena informaci&oacute;n referente 
+  a las ventas realizadas por UOCT a entidades externas(clientes).Esta informaci&oacute;n 
+  describe el cliente, el c&oacute;digo de la venta, el detalle de la informaci&oacute;n 
+  que se est&aacute; vendiendo, etc.</p>
+<p>El proceso se inicia cuando se ingresan los datos del proceso de venta al sistema(Iniciar 
+  una Venta). El proceso pasa por varias etapas que determinan su estado:</p>
+<ul>
+  <li>Iniciado: Cuando se ingresan los datos de la venta al sistema.</li>
+  <li>Cotizaci&oacute;n entregada: Cuando UOCT entrega la cotizaci&oacute;n de 
+    la informaci&oacute;n que el cliente desea comprar. La informaci&oacute;n 
+    que UOCT puede vender est&aacute; definida por un Decreto de ley, asimismo 
+    como los precios de tal informaci&oacute;n.</li>
+  <li>Pagado: Cuando el cliente realiza el dep&oacute;sito, de acuerdo a la cotizaci&oacute;n 
+    entregada por UOCT.</li>
+  <li>Informaci&oacute;n entregada: Cuando UOCT entrega la informaci&oacute;n 
+    al cliente, de acuerdo a la cotizaci&oacute;n.</li>
+  <li>Venta Finalizada: Cuando finalmente se registra el codigo de la factura.</li>
+</ul>
+<p>Adem&aacute;s se ha agregado un estado &quot;Venta no realizada&quot; , correspondiente 
+  a un proceso que se inicia y que en alguna de las etapas el cliente decide no 
+  efectuar la compra.</p>
+<p>En la intranet, cada vez que se registra una fecha correspondiente al proceso 
+  (fecha de entrega de cotizaci&oacute;n, fecha de pago, fecha de entrega de informaci&oacute;n 
+  y fecha de finalizaci&oacute;n), el estado cambia autom&aacute;ticamente al 
+  estado que corresponda.</p>
+<h1>1.Clientes de Ventas </h1>
+<ul>
+  <blockquote> 
+    <p><a name="regCli">Registrar Clientes</a> (Restringido a personal autorizado)</p>
+  </blockquote>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Registrar Cliente&quot; en la secci&oacute;n 
+      &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Completar el Formulario con los datos del nuevo cliente.El &uacute;nico 
+      dato obligatorio para ingresar un cliente es el NOMBRE.</li>
+    <li> presionar el bot&oacute;n &quot;Guardar&quot;.</li>
+    <li>Se mostrar&aacute; un mensaje confirmando que el cliente ha sido registrado.</li>
+  </ol>
+  <blockquote> 
+    <p><a name="editarCli">Editar Clientes</a> (Restringido a personal autorizado)</p>
+  </blockquote>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Editar Cliente&quot; en la secci&oacute;n 
+      &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Ingresar una palabra como par&aacute;metro para la b&uacute;squeda de 
+      cliente. Se buscar&aacute;n coincidencias de la palabra ingresada con el 
+      nombre,direcci&oacute;n, giro, contactos o comentario de cada uno de los 
+      clientes registrados en el sistema y se mostrar&aacute; una lista con el 
+      resultado de la b&uacute;squeda.</li>
+    <li>Cliquear en el nombre del cliente que se desea editar.</li>
+    <li>Editar los datos del cliente seleccionado. Se pueden editar todos los 
+      datos del cliente, salvo el nombre. Entre los datos editables, es posible 
+      activar o desactivar un cliente. De esta forma, los clientes no se eliminan 
+      del sistema, pero al estar desactivados no se les puede asociar con una 
+      nueva venta, ni se arrojar&aacute;n como resultado en las pantallas de b&uacute;squeda.</li>
+    <li>Presionar el bot&oacute;n &quot;Guardar&quot;.</li>
+  </ol>
+  <blockquote> 
+    <p><a name="buscarCli">Buscar Clientes</a> </p>
+  </blockquote>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Buscar Cliente&quot; en la secci&oacute;n 
+      &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Ingresar una palabra como par&aacute;metro para la b&uacute;squeda de 
+      cliente. Se buscar&aacute;n coincidencias de la palabra ingresada con el 
+      nombre,direcci&oacute;n, giro, contactos o comentario de cada uno de los 
+      clientes registrados en el sistema y se mostrar&aacute; una lista con el 
+      resultado de la b&uacute;squeda.</li>
+    <li>Cliquear en el nombre del cliente para conocer sus datos.</li>
+  </ol>
+</ul>
+<hr>
+<h1>2.Tipos de Ventas </h1>
+<ul>
+  <blockquote> 
+    <p><a name="ingresarTipo">Ingresar Tipos de Ventas</a> (Restringido a personal 
+      autorizado)</p>
+  </blockquote>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. Tipos de Ventas&quot; en la 
+      secci&oacute;n &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Indicar el nombre del nuevo tipo de Venta, la unidad de Venta y el precio 
+      en UF y presionar el bot&oacute;n ingresar.</li>
+    <li>La lista de tipos de informaci&oacute;n para la Venta ser&aacute; actualizada 
+      y se muestra un mensaje confirmando el registro del tipo.</li>
+  </ol>
+  <blockquote> 
+    <p><a name="editarTipo">Editar Tipos de Ventas</a> (Restringido a personal 
+      autorizado)</p>
+  </blockquote>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. Tipos de Ventas&quot; en la 
+      secci&oacute;n &quot;Ventas&quot; en el men&uacute; de la Intranet. Con 
+      esto, se motrar&aacute; una lista de los tipos de ventas disponibles.</li>
+    <li>Cliquear la opci&oacute;n editar correspondiente al tipo de informaci&oacute;n 
+      para la venta que se desea editar.</li>
+    <li>Editar los datos del tipo de informaci&oacute;n para la venta. Se puede 
+      editar la unidad de venta y el precio del tipo de venta. Adem&aacute;s, 
+      se puede activar o desactivar el tipo de venta. S&oacute;lo un tipo de venta 
+      <em>activada</em> puede ser incluida en un nuevo proceso de venta.</li>
+    <li> Presionar el bot&oacute;n &quot;actualizar&quot;.</li>
+    <li>Se mostrar&aacute; un mensaje confirmando la actualizaci&oacute;n del 
+      tipo de informaci&oacute;n. </li>
+  </ol>
+</ul>
+<hr>
+<p>&nbsp;</p>
+<h1>3.Ventas </h1>
+<blockquote> 
+  <p><a name="regVenta">Registrar Venta</a> (Restringido a personal autorizado)</p>
+</blockquote>
+<ul>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Nueva Venta&quot; en la secci&oacute;n 
+      &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Indicar los datos de la nueva venta, el detalle de la informaci&oacute;n 
+      vendida y presionar el bot&oacute;n &quot;ingresar&quot;.</li>
+  </ol>
+  <ul>
+    <li>C&Oacute;DIGO DE LA VENTA: es obligatorio y corresponde a un identificador 
+      del proceso de venta.</li>
+    <li>FECHA DE INICIO: se ingresa presionando el &iacute;cono de calendario, 
+      con lo que se abre una ventana mostrando un calendario. Seleccione la fecha.</li>
+    <li>CLIENTE: se selecciona cliqueando la frase &quot;Buscar Cliente&quot;, 
+      con lo que se abre una nueva ventana donde se debe realizar la b&uacute;squeda 
+      y selecci&oacute;n del cliente. Aseg&uacute;rese que el cliente del nuevo 
+      proceso de venta ya ha sido ingresado al sistema.</li>
+    <li>DETALLE: de la venta tiene tres campos para cada &iacute;tem de la venta. 
+      <ul>
+        <li>cantidad</li>
+        <li>tipo de informaci&oacute;nque se va a vender(se debe seleccionar desde 
+          una lista de tipos de venta disponibles).</li>
+        <li>detalle, donde se puede agregar un comentario para especificar la 
+          informaci&oacute;n que se est&aacute; vendiendo.</li>
+      </ul>
+    </li>
+    <li>COMENTARIO: no es un campo obligatorio y tiene como objetivo registrar 
+      cualquier informaci&oacute;n no especificada en los campos anteriormente 
+      mencionados. </li>
+  </ul>
+</ul>
+<blockquote> 
+  <p>3. Se mostrar&aacute; un mensaje confirmando el ingreso de la nueva venta.</p>
+  <p><a name="editarVenta">Editar Venta</a> (Restringido a personal autorizado)</p>
+</blockquote>
+<ul>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Editar Venta&quot; en la secci&oacute;n 
+      &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Ingresar los par&aacute;metros de b&uacute;squeda de ventas y presionar 
+      el bot&oacute;n &quot;Buscar&quot;. Puede indicar uno o m&aacute;s parametros 
+      de b&uacute;squeda. Los p&aacute;rametros son: fecha de inicio(se indica 
+      un rango de fechas para buscar), cliente (se busca en una ventana distinta 
+      al presionar la parabra &quot;Buscar cliente&quot;) y el estado de la venta(iniciado, 
+      cotizaci&oacute;n entregada, pagado, informaci&oacute;n entregada, venta 
+      finalizada o venta no efectuada).</li>
+    <li>Cliquear la opci&oacute;n &quot;Editar&quot; correspondiente al proceso 
+      de Venta que se quiere editar.Una venta solamente es editable si NO est&aacute; 
+      en estado &quot;Venta finalizada&quot; o &quot;Venta no efectuada&quot;.</li>
+    <li>Editar los datos de la Venta: Si la venta est&aacute; en estado &quot;iniciada&quot; 
+      o &quot;cotizaci&oacute;n entregada&quot; es posible editar todos los datos 
+      salvo el c&oacute;digo de la venta. Si est&aacute; en alguno de los estados 
+      posteriores del proceso de venta, solamente se pueden efectuar los ingresos 
+      de nuevas fechas correspondientes al estado en el que se encuentra la venta, 
+      o anular el proceso mediante la operaci&oacute;n &quot;venta no efectuada&quot;.</li>
+    <li>Presionar el bot&oacute;n &quot;Guardar los Cambios&quot;.</li>
+  </ol>
+</ul>
+<blockquote> 
+  <p><a name="regFecha">Registrar Fechas asociadas al proceso de Venta</a> (Restringido 
+    a personal autorizado)</p>
+</blockquote>
+<ul>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Editar Venta&quot; en la secci&oacute;n 
+      &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Ingresar los par&aacute;metros de b&uacute;squeda de ventas y presionar 
+      el bot&oacute;n &quot;Buscar&quot;.</li>
+    <li>Cliquear la opci&oacute;n &quot;Editar&quot; correspondiente al proceso 
+      de Venta al cual se quiere registrar una Fecha.</li>
+    <li>Si el estado de la Venta es &quot;Iniciada&quot;, se puede ingresar la 
+      Fecha de Entrega de cotizaci&oacute;n, con lo que la venta pasa al estado 
+      &quot;Cotizaci&oacute;n entregada&quot;; Si el estado de la Venta es &quot;Cotizaci&oacute;n 
+      entregada&quot;, se puede registrar la &quot;Fecha de Pago&quot;,con lo 
+      que la cotizaci&oacute;n pasa al estado &quot;Pagado recibido&quot;;Si el 
+      estado de la Venta es &quot;Pago recibido&quot;, se puede registrar la &quot;Fecha 
+      de Entrega de la Informaci&oacute;n&quot;,con lo que la cotizaci&oacute;n 
+      pasa al estado &quot;Venta Finalizada&quot;. Desde cualquier estado de la 
+      venta, se puede anular el proceso de venta.</li>
+  </ol>
+</ul>
+<blockquote> 
+  <p><a name="actualizarUF">Actualizar el precio de la UF</a> (Restringido a personal 
+    autorizado)</p>
+</blockquote>
+<ul>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Actualizar UF&quot; en la secci&oacute;n 
+      &quot;Ventas&quot; en el men&uacute; de la Intranet.</li>
+    <li>Ingresar el nuevo valor de la UF y presionar el bot&oacute;n actualizar.</li>
+  </ol>
+</ul>
+</body>
+</html>

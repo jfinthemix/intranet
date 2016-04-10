@@ -1,0 +1,484 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ayuda-Documentacion</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="estiloAyuda.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Modulo de Documentaci&oacute;n </h1>
+<p>El modulo de documentaci&oacute;n es una herramienta que permite registrar 
+  f&aacute;cilmente tanto los ingresos o despachos de documentaci&oacute;n, adem&aacute;s 
+  de permitir a los usuarios realizar r&aacute;pidamente busquedas de documentos 
+  y conocer en pocos pasos los datos de los clientes y entidades externas relacionadas 
+  con los documentos registrados, esto principalmente debido a que se maneja una 
+  agenda de todas las entidades relacionadas con la UOCT, as&iacute; como de las 
+  personas asociadas a ellas(clientes), adem&aacute;s de las personas particulares 
+  que han tendio alg&uacute;n contacto con nuestra instituci&oacute;n.</p>
+<ol>
+  <li>Tipos de Documentos 
+    <ul>
+      <li><a href="#ingresarTipoDoc">Ingresar Tipo de Documento</a></li>
+      <li><a href="#estadoTipoDoc">Deshabilitar o habilitar Tipo de Documento</a></li>
+      <li></li>
+    </ul>
+  </li>
+  <li>Codigos de Documentos 
+    <ul>
+      <li><a href="#reservarCodDoc">Reservar C&oacute;digo de Documento</a></li>
+      <li><a href="#codDocsReservados">Consultar C&oacute;digos de Documentos 
+        Reservados</a></li>
+    </ul>
+  </li>
+  <li>Documentos 
+    <ul>
+      <li><a href="#ingresarDoc">Ingresar Documento</a></li>
+      <li><a href="#despacharDoc">Despachar Documento</a></li>
+      <li><a href="#editarDoc">Editar Documentos</a></li>
+      <li><a href="#adminArchivosDoc">Administrar archivos de Documentos</a></li>
+      <li><a href="#buscarDocs">Buscar Documentos</a></li>
+    </ul>
+  </li>
+  <li>Cliente 
+    <ul>
+      <li> <a href="#registrarEntExt">Registrar Entidad Externa</a></li>
+      <li><a href="#editarEntExt">Editar Entidad Externa</a></li>
+      <li><a href="#regCliente">Registrar Cliente</a></li>
+      <li><a href="#editarCliente">Editar Cliente</a></li>
+      <li><a href="#buscarClientes">Buscar Clientes</a></li>
+      <li><a href="#exportarAgenda">Exportar la agenda de clientes</a></li>
+    </ul>
+  </li>
+</ol>
+<hr>
+<h1>1.Tipos de Documentos </h1>
+<p>Un tipo de documento es una clasifiaci&oacute;n que permite identificar en 
+  primera instancia el c&oacute;digo del documento. Con eso se hace m&aacute;s 
+  sencilla la administraci&oacute;n de los documentos y su busqueda.</p>
+<p><a name="ingresarTipoDoc">Ingresar Tipo de Documento</a> (Restringido a personal 
+  autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Admin. Tipos de Documentos&quot; en la 
+    secci&oacute;n Documentaci&oacute;n del men&uacute;.</li>
+  <li>Se mostrar&aacute; una pantalla con un formulario de Ingreso de tipos de 
+    documentos ,una lista de tipos de documentos entrantes(Ingresos) y una lista 
+    de tipos de documentos salientes(Despacho).</li>
+  <li>Ingresar los datos del nuevo tipo de documentaci&oacute;n y presionar el 
+    bot&oacute;n &quot;agregar&quot;. Los datos requeridos son:</li>
+  <ul>
+    <li><strong>Siglas: </strong>Corresponde a una abreviaci&oacute;n del tipo 
+      de documento. Esta sigla es la primera parte del nombre de cualquier documento 
+      de este tipo.</li>
+    <li><strong>Sentido:</strong> Indica si el tipo de documento es entrante(Ingreso)) 
+      o saliente(Despacho).</li>
+    <li><strong>&iquest;Ser&aacute; usado en Iniciativas de Inversi&oacute;n?: 
+      </strong>Hay algunos tipos de documentos, como OT, NLO que son usadas en 
+      la documentaci&oacute;n de las iniciativas de inversi&oacute;n. Dado que 
+      la documentaci&oacute;n que se usada para las iniciativas de inversi&oacute;n 
+      se registra de distinta forma que cualquier otra documentaci&oacute;n, responder 
+      correctamente a esta pregunta es muy importante.</li>
+  </ul>
+  <li>La aplicaci&oacute;n mostrar&aacute; un menaje confirmando el ingreso y 
+    actualizar&aacute; la p&aacute;gina ahora con el nuevo tipo de documentaci&oacute;n 
+    en la lista.</li>
+</ol>
+<p><a name="estadoTipoDoc">Deshabilitar o habilitar Tipo de Documento</a> (Restringido 
+  a personal autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Admin. Tipos de Documentos&quot; en la 
+    secci&oacute;n Documentaci&oacute;n del men&uacute;.</li>
+  <li>Se mostrar&aacute; una pantalla con un formulario de Ingreso de tipos de 
+    documentos ,una lista de tipos de documentos entrantes(Ingresos) y una lista 
+    de tipos de documentos salientes(Despacho).</li>
+  <li>Cada tipo de documento de las listas tiene un bot&oacute;n para &quot;Deshabilitar&quot; 
+    o &quot;Habilitar&quot;, de acuerdo al estado actual del documento.</li>
+  <li>Presionando el bot&oacute;n se cambiar&aacute; el estado del tipo de documento, 
+    con lo que se mostrar&aacute; un mensaje de confirmaci&oacute;n y se actualizar&aacute; 
+    la p&aacute;gina mostrando la lista de tipos de documentos.</li>
+</ol>
+<hr>
+<h1>2.Codigos de Documentos</h1>
+<p><a name="reservarCodDoc">Reservar C&oacute;digo de Documento </a> </p>
+<ol>
+  <li>Luego de ingresar a la intranet (hacer login), se muestra un menu desplegable, 
+    en la esquina inferior derecha,con los tipos de documentos disponibles.</li>
+  <li>Seleccionar el tipo de documento a reservar y presionar el bot&oacute;n 
+    &quot;reservar&quot; en la portada de la intranet.</li>
+  <li>Se mostrar&aacute; una ventana emergente solicitando la confirmaci&oacute;n 
+    de la reserva.</li>
+  <li>Si se confirma la operaci&oacute;n se mostrar&aacute; el c&oacute;digo de 
+    documentaci&oacute;n reservado.</li>
+</ol>
+<p><a name="codDocsReservados">Consultar C&oacute;digos de Documentos Reservados</a> 
+  (Restringido a personal autorizado) </p>
+<ol>
+  <li>Logearse en la intranet.</li>
+  <li>Seleccionar la opci&oacute;n &quot;Ver Codigos Reservados&quot; en la secci&oacute;n 
+    &quot;documentaci&oacute;n&quot; del men&uacute; de la intranet.</li>
+  <li>Indicar los par&aacute;metros de la b&uacute;squeda y presionar el bot&oacute;n 
+    &quot;Buscar&quot;. Los par&aacute;metros de la b&uacute;squeda son: 
+    <ol>
+      <ul>
+        <li><strong>Tipo de documento:</strong> Para esto se muestra un men&uacute; 
+          desplegable con la lista de tipos de documentos disponibles.</li>
+        <li><strong>Fecha de reserva:</strong> Se puede especificar un rango de 
+          fechas en los que fue realizada la reserva del documento.</li>
+        <li><strong>Usuario:</strong> Es un men&uacute; desplegable donde se puede 
+          seleccionar un usuario, al cual corresponder&aacute;n las reservas que 
+          se listen en la b&uacute;squeda.</li>
+      </ul>
+    </ol>
+    <p>Ninguno de estos par&aacute;metros es obligatorio, sin embargo, mientras 
+      m&aacute;s par&aacute;metros se ingresen, la lista de resultados ser&aacute; 
+      m&aacute;s acotada</p>
+  </li>
+  <li>Se mostrar&aacute; una lista con los c&oacute;digos de documentos reservados 
+    y, en caso que se haya despachado un documento con el mismo c&oacute;digo, 
+    se mostrar&aacute; un link para acceder al detalle del documento. </li>
+</ol>
+<blockquote> 
+  <p>&nbsp;</p>
+</blockquote>
+<hr>
+<h1>3.Documentos</h1>
+<p><a name="ingresarDoc">Ingresar Documento</a> (Restringido a personal autorizado)</p>
+<p>El ingresar el documento corresponde al registro en el sistema, de documentos 
+  que llegan desde cualquier entidad o persona, a la UOCT, es decir, documentos 
+  entrantes.</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Ingresar Documento&quot; desde la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; en el men&uacute;.</li>
+  <li>Ingresar los datos del documento en el formulario. Los datos que se deben 
+    ingresar son: 
+    <ul>
+      <li>C&oacute;digo: Est&aacute; dividido en dos partes: El tipo de documento, 
+        el cual se selecciona desde un men&uacute; desplegable con la lista de 
+        los tipos de documentos disponibles, y el identificador mismo. El identificador 
+        puede ser cualquier cadena de caracteres.</li>
+      <li>Remitente: Corresponde a quien emite el documento. Solamente puede ser 
+        una persona o entidad que est&eacute; previamente registrada entre los 
+        clientes del sistema. Para indicar el remitente se debe clickear la frase 
+        &quot;Buscar Cliente&quot;, ubicada a la derecha del campo de texto. Con 
+        eso se abrir&aacute; una nueva ventana en la cual se puede ingresar una 
+        palabra clave para la b&uacute;squeda del cliente, y presionar el bot&oacute;n 
+        &quot;Buscar&quot;. De esta forma se mostrar&aacute; una lista de clientes 
+        coincidentes con la palabra clave ingresada. Desde esta lista se debe 
+        seleccionar el cliente deseado.</li>
+      <li>Materia: Corresponde a un campo con el que vienen los documentos, que 
+        indica palabras representativas del asunto del documento.</li>
+      <li>Fecha de Ingreso: Fecha en que se recibi&oacute; el documento en la 
+        UOCT. </li>
+      <li>Fecha del documento: Fecha de redacci&oacute;n del documento.</li>
+      <li>Anterior: Documento relacionado. Corresponde a documentos anteriores 
+        que hayan tenido relaci&oacute;n con el mismo tema del documento que se 
+        est&aacute; ingresando. Pueden ser varios documentos. 
+        <blockquote> 
+          <p> Para cada documento que se desee agregar a la lista se debe:</p>
+          <p> -Presionar la palabra &quot;Buscar&quot; ubicada a la derecha del 
+            campo de texo destinada al c&oacute;digo. Con esto se abrir&aacute; 
+            una nueva ventana con un cuadro para buscar documentos.<br>
+            -Ingresar los par&aacute;metros de busqueda del documento( Similar 
+            al procedimiento de<a href="#buscarDocs"> &quot;Buscar Documentos</a>&quot; 
+            del m&oacute;dulo de Documentaci&oacute;n). Con esto se mostrar&aacute; 
+            una lista de documentos coincidentes con los par&aacute;metros ingresados.<Br>
+            -Seleccionar el nombre del documento buscado.Con esto se cierra la 
+            ventana de busqueda de documentos y aparece el nombre del documento 
+            en el formulario de ingreso de documento.<br>
+            -Presionar el bot&oacute;n &quot;agregar&quot;, con lo que se agrega 
+            el documento a la lista de documentos anteriores.</p>
+        </blockquote>
+      </li>
+      <li>Responsable: Persona de la UOCT a quien va dirigido el documento, o 
+        quien est&aacute; encargado de responderlo</li>
+      <li>Subir Documento: Se pueden anexar hasta 3 archivos digitales a un registro 
+        de documento. En caso que se requiera archivar un numero mayor al indicado, 
+        se deben comprimir localmente para ser subidos luego. Para subir un documento, 
+        se debe:
+        <ul>
+          <li>Marcar la casilla de la izquierda del formulario.</li>
+          <li>Presionar el bot&oacute;n examinar correspondiente a la casilla 
+            marcada.</li>
+          <li>Localizar y seleccionar el documento.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Presionar el bot&oacute;n &quot;Guardar&quot; ubicabo al final del formulario.</li>
+</ol>
+<p><a name="despacharDoc">Despachar Documento</a> (Restringido a personal autorizado)</p>
+<p>El Despachar un documento corresponde al registro en el sistema, de documentos 
+  que son emitidos cualquier en UOCT para alguna entidad o persona externa, , 
+  es decir, documentos salientes.</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Despachar Documento&quot; desde la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; en el men&uacute;.</li>
+  <li>Ingresar los datos del documento en el formulario. Los datos que se deben 
+    ingresar son: 
+    <ul>
+      <li>C&oacute;digo: Est&aacute; dividido en dos partes: El tipo de documento, 
+        el cual se selecciona desde un men&uacute; desplegable con la lista de 
+        los tipos de documentos disponibles, y el identificador mismo. El identificador 
+        puede ser cualquier cadena de caracteres.</li>
+      <li>Destinatario: Corresponde a quien recibir&aacute; el documento. Solamente 
+        puede ser una persona o entidad que est&eacute; previamente registrada 
+        entre los clientes del sistema. Para indicar el destinatario se debe clickear 
+        la frase &quot;Buscar Cliente&quot;, ubicada a la derecha del campo de 
+        texto. Con eso se abrir&aacute; una nueva ventana en la cual se puede 
+        ingresar una palabra clave para la b&uacute;squeda del cliente, y presionar 
+        el bot&oacute;n &quot;Buscar&quot;. De esta forma se mostrar&aacute; una 
+        lista de clientes coincidentes con la palabra clave ingresada. Desde esta 
+        lista se debe seleccionar el cliente deseado.</li>
+      <li>Materia: Corresponde a un campo con el que se emiten los documentos, 
+        es una frase o titulo representativo del asunto del documento.</li>
+      <li>Fecha de Egreso: Fecha en que se env&iacute;a el documento desde la 
+        UOCT. </li>
+      <li>Fecha del documento: Fecha de redacci&oacute;n del documento.</li>
+      <li>Anterior: Documento relacionado. Corresponde a documentos anteriores 
+        que hayan tenido relaci&oacute;n con el mismo tema del documento que se 
+        est&aacute; ingresando. Pueden ser varios documentos. 
+        <blockquote> 
+          <p> Para cada documento que se desee agregar a la lista se debe:</p>
+          <p> -Presionar la palabra &quot;Buscar&quot; ubicada a la derecha del 
+            campo de texo destinada al c&oacute;digo. Con esto se abrir&aacute; 
+            una nueva ventana con un cuadro para buscar documentos.<br>
+            -Ingresar los par&aacute;metros de busqueda del documento( Similar 
+            al procedimiento de &quot;<a href="#buscarDocs">Buscar Documentos</a>&quot; 
+            del m&oacute;dulo de Documentaci&oacute;n). Con esto se mostrar&aacute; 
+            una lista de documentos coincidentes con los par&aacute;metros ingresados.<Br>
+            -Seleccionar el nombre del documento buscado.Con esto se cierra la 
+            ventana de busqueda de documentos y aparece el nombre del documento 
+            en el formulario de ingreso de documento.<br>
+            -Presionar el bot&oacute;n &quot;agregar&quot;, con lo que se agrega 
+            el documento a la lista de documentos anteriores.</p>
+        </blockquote>
+      </li>
+      <li>Responsable: Persona de la UOCT autora del documento.</li>
+      <li>Subir Documento: Se pueden anexar hasta 3 archivos digitales a un registro 
+        de documento. En caso que se requiera archivar un numero mayor al indicado, 
+        se deben comprimir localmente para ser subidos luego. Para subir un documento, 
+        se debe: 
+        <ul>
+          <li>Marcar la casilla de la izquierda del formulario.</li>
+          <li>Presionar el bot&oacute;n examinar correspondiente a la casilla 
+            marcada.</li>
+          <li>Localizar y seleccionar el documento.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Presionar el bot&oacute;n &quot;Guardar&quot; ubicado al final del formulario.</li>
+</ol>
+<p><a name="editarDoc">Editar Documentos</a> (Restringido a personal autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Editar Documentos&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;.</li>
+  <li>Ingresar los par&aacute;metros para la b&uacute;squeda de documentos y presionar 
+    el bot&oacute;n &quot;buscar&quot;. Los par&aacute;metros de la busqueda son 
+    los mismos que en <a href="#buscarDocs">Buscar Documentos</a>.</li>
+  <li>Se mostrar&aacute; una lista de documentos coincidentes con los par&aacute;metros 
+    ingresados.</li>
+  <li>Seleccionar el documento que se desea editar desde la lista( haciendo click 
+    en el c&oacute;digo del documento).</li>
+  <li>Se mostrar&aacute; un formulario con los datos del documento seleccionado.</li>
+  <li>Editar los datos del documento y presionar el bot&oacute;n &quot;guardar&quot;. 
+    Los datos editables son: 
+    <ol>
+      <ul>
+        <li>Cliente: Remitente o Destinatario, seg&uacute;n sea un ingreso o despacho 
+          de documento.</li>
+        <li>Materia.</li>
+        <li>Fecha de ingreso o egreso: Si es un ingreso de documentaci&oacute;n, 
+          corresponde a la fecha de ingreso, sino, a la fecha de egreso.</li>
+        <li>Anterior.</li>
+        <li>Responsable: es posible agregar o quitar responsables de la lista.</li>
+      </ul>
+    </ol>
+  </li>
+  <li>Presionar el bot&oacute;n &quot;guardar&quot;.</li>
+</ol>
+<p><a name="adminArchivosDoc">Administrar archivos de Documentos</a> (Restringido 
+  a personal autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Editar Documentos&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;.</li>
+  <li>Ingresar los par&aacute;metros para la b&uacute;squeda de documentos y presionar 
+    el bot&oacute;n &quot;buscar&quot;.Los par&aacute;metros de la busqueda son 
+    los mismos que en <a href="#buscarDocs">Buscar Documentos</a>.</li>
+  <li>Seleccionar el documento que se desea editar desde la lista( haciendo click 
+    en el c&oacute;digo del documento).</li>
+  <li>Presionar el bot&oacute;n &quot;Administrar los archivos del documento&quot;.</li>
+  <li>Se mostrar&aacute; una pantalla con un formulario para agregar archivos 
+    asociados al documento y una lista de los archivos asociados hasta el momento 
+    con el documento, con la opci&oacute;n de eliminar cada uno de los archivos.</li>
+</ol>
+<p><a name="buscarDocs">Buscar Documentos</a> </p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Buscar Documentos&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;.</li>
+  <li>Ingresar los par&aacute;metros para la b&uacute;squeda de documentos y presionar 
+    el bot&oacute;n &quot;buscar&quot;. </li>
+  <ul>
+    <ul>
+      <li>Los par&aacute;metros de busqueda son los siguientes: 
+        <ul>
+          <li><strong>Codigo:</strong> Si se quiere buscar por c&oacute;digo, 
+            se debe seleccionar el tipo de documento de la lista, y agregar una 
+            palabra que est&eacute; incluida dentro del codigo del documento.</li>
+          <li><strong>Sentido</strong>: Se puede buscar por sentido si no se ha 
+            seleccionado la opci&oacute;n &quot;por c&oacute;digo&quot;.</li>
+          <li><strong>Materia</strong>: Una palabra clave relacionada con la materia.</li>
+          <li><strong>Fecha:</strong> corresponde al rango de fechas en que fue 
+            recibido o enviado el documento.</li>
+          <li><strong>Palabra Clave: </strong>Cualquier palabra incluida en el 
+            nombre del cliente, apellido del cliente, materia o resumen del documento.</li>
+          <li><strong>Encargado:</strong> Persona de la UOCT relacionada con el 
+            documento.</li>
+          <li><strong>Incluir Documentos de Iniciativas de Inversi&oacute;n:</strong> 
+            Se debe marcar la casilla en caso que se requiera mostrar en el resultado 
+            de la busqueda los documentos asociados a Iniciativas de Inversi&oacute;n.</li>
+        </ul>
+      </li>
+    </ul>
+  </ul>
+</ol>
+<blockquote>
+  <p>Hay ciertos par&aacute;metros que es obligatorio incluir, como la selecci&oacute;n 
+    de buscar por c&oacute;digo o por sentido. Si se selecciona buscar por sentido 
+    entrante, y no se ingresa ning&uacute;n par&aacute;metro m&aacute;s, se mostrar&aacute;n 
+    todos los documentos entrantes. Lo mismo funciona para la busqueda por sentido 
+    saliente. </p>
+</blockquote>
+<ol>
+  <li>Seleccionar el documento para conocer el detalle del documento, incluyendo 
+    la descarga de archivos asociados a &eacute;l en caso de existir.</li>
+  <li>El resultado de la b&uacute;squeda de documentos puede ser exportada a Excel 
+    o PDF.</li>
+  <p>&nbsp;</p>
+</ol>
+<hr>
+<h1>4.Cliente</h1>
+<p>Un cliente es cualquier persona , perteneciente a una entidad externa ( instltuci&oacute;n) 
+  o particular, que haya enviado una carta o documento a la UOCT o a la cual se 
+  haya enviado un documento o carta desde la UOCT.</p>
+<p><a name="registrarEntExt">Registrar Entidad Externa</a> (Restringido a personal 
+  autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Registrar Entidad Externa&quot; en la 
+    secci&oacute;n &quot;Documentaci&oacute;n&quot; del men&uacute;.</li>
+  <li>Ingresar los datos de la nueva entidad externa al formulario que se mostrar&aacute; 
+    para tal efecto. Los datos que se pueden ingresar son:</li>
+  <ul>
+    <li><strong>Nombre</strong>: Es el &uacute;nico campo obligatorio para el 
+      registro de una entidad externa. </li>
+    <li><strong>Tel&eacute;fono</strong>: Telefono de la instituci&oacute;n.</li>
+    <li><strong>Sitio Web</strong>: URL de la instituci&oacute;n o entidad externa.</li>
+    <li><strong>Direcci&oacute;n</strong>: Direcci&oacute;n fisica en la cual 
+      se encuentra la entidad externa. </li>
+  </ul>
+  <li>Presionar el bot&oacute;n &quot;Guardar&quot;.</li>
+  <li>Se mostrar&aacute; un mensaje con la confirmaci&oacute;n de la operaci&oacute;n.</li>
+</ol>
+<p><a name="editarEntExt">Editar Entidad Externa</a> (Restringido a personal autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Editar Entidad Externa&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;.</li>
+  <li>Se mostrar&aacute; una lista ordenada alfab&eacute;ticamente de las entidades 
+    registradas. Cada uno de los registros tiene un link &quot;editar&quot; asociado.</li>
+  <li>Seleccionar la opci&oacute;n &quot;editar&quot; en la lista de entidades, 
+    junto al nombre de la entidad que se desea editar.</li>
+  <li>Editar los datos de la entidad escogida y/o cambiar el estado de la entidad 
+    (Activada, Desactivada). Es posible editar el tel&eacute;fono, sitio web y 
+    direcci&oacute;n, adem&aacute;s de la activaci&oacute;n o desactivaci&oacute;n 
+    de la entidad( no es posible agregar m&aacute;s clientes asociados a una entidad 
+    desactivada). </li>
+</ol>
+<p><a name="regCliente">Registrar Cliente</a> (Restringido a personal autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Registrar Cliente&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;.</li>
+  <li>Ingresar los datos del nuevo cliente al formulario que se mostrar&aacute; 
+    para tal efecto. Los datos que se pueden ingresar son: </li>
+  <ul>
+    <li><strong>Nombre</strong>: Nombre del cliente</li>
+    <li><strong>Apellido</strong>:Apellido del cliente</li>
+    <li><strong>Tel&eacute;fono</strong>: telefono del cliente</li>
+    <li><strong>Email</strong>:correo electr&oacute;nico de contacto</li>
+    <li><strong>Celular</strong>: n&ordm; de celular del cliente.</li>
+    <li><strong>Cargo</strong>: cargo del cliente dentro de la entidad externa</li>
+    <li><strong>Comentario</strong>: Cualquier comentario que sea util para la 
+      descripci&oacute;n del cliente, otras formas de contacto, etc.</li>
+    <li><strong>Entidad Externa a la que pertenece</strong>: Para seleccionar 
+      la entidad se debe pinchar el link &quot;Buscar Entidad Externa&quot;, con 
+      lo que se abrir&aacute; una nueva ventana para la busqueda. Se debe ingresar 
+      una palabra clave para la busqueda y presionar el bot&oacute;n &quot;buscar&quot; 
+      con lo que se mostrar&aacute; una lista con las entidades externas coincidentes 
+      con la b&uacute;squeda. Se debe seleccionar la entidad deseada, con lo que 
+      se cerrar&aacute; la ventana de busqueda, y el nombre de la entidad asociada 
+      ser&aacute; mostrado en el formulario de registro del cliente.</li>
+  </ul>
+  <blockquote> 
+    <p>Si no se encuentra la entidad externa en la b&uacute;squeda, es necesario 
+      ingresarla, para lo cual se puede pinchar el link &quot;nueva entidad externa&quot;. 
+      Con esta opci&oacute;n s<strong>e perder&aacute;n los datos no guardados 
+      del registro del cliente.</strong></p>
+    <p>Si se seleccion&oacute; una entidad externa, y en realidad el cliente no 
+      pertenece a ninguna entidad, se debe pinchar el link &quot;ninguna entidad&quot;, 
+      con lo que se desvincular&aacute; al cliente de la entidad previamente seleccionada.</p>
+  </blockquote>
+  <li>Presionar el bot&oacute;n &quot;Guardar&quot;</li>
+  <li>Se mostrar&aacute; un mensaje con la confirmaci&oacute;n de la operaci&oacute;n.</li>
+</ol>
+<p><a name="editarCliente">Editar Cliente</a> (Restringido a personal autorizado)</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Editar Cliente&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;. </li>
+  <li>Realizar una b&uacute;squeda de clientes por medio de una palabra clave 
+    o por medio de la selecci&oacute;n de clientes particulares(sin entidad asociada)</li>
+  <li>Cliquear la opci&oacute;n editar al lado del nombre del cliente que se desea 
+    editar desde la lista de clientes coincidentes con la b&uacute;squeda.</li>
+  <li>Editar los datos del cliente y/o cambiar su estado(Activado, Desactivado). 
+    <strong>Todos los datos del cliente son editables.</strong></li>
+</ol>
+<p>&nbsp;</p>
+<p><a name="buscarClientes">Buscar Clientes</a> </p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Buscar Clientes&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;. </li>
+  <li>La b&uacute;squeda se puede realizar por dos formas distintas: 
+    <ol>
+      <ol>
+        <ol>
+          <li>Por medio del ingreso de una palabra clave. Se buscar&aacute;n coincidencias 
+            de la palabra clave con el nombre del cliente, apellido, email, comentario, 
+            nombre de la entidad externa o direcci&oacute;n. Si no se ingresa 
+            una palabra clave, se listar&aacute;n todos los clientes registrados.</li>
+          <li>Por medio de la b&uacute;squeda de clientes particulares. Con esto 
+            se listar&aacute;n solamente los clientes que no est&aacute;n asociados 
+            a ninguna entida externa.</li>
+        </ol>
+        <blockquote> 
+          <p>Luego de la busqueda, sea cual sea, se mostrar&aacute; una lista 
+            con los clientes coincidentes con los par&aacute;metros de la b&uacute;squeda.</p>
+        </blockquote>
+      </ol>
+    </ol>
+  </li>
+  <li>Cliquear el nombre del cliente para conocer el detalle de los datos del 
+    cliente o en el nombre de la entidad externa asociada al cliente para conocer 
+    los datos de esa instituci&oacute;n.</li>
+  <li>El resultado de la b&uacute;squeda de clientes puede ser exportada a Excel 
+    o PDF.</li>
+</ol>
+<p><a name="exportarAgenda">Exportar la agenda de clientes</a>.</p>
+<ol>
+  <li>Seleccionar la opci&oacute;n &quot;Buscar Clientes&quot; en la secci&oacute;n 
+    &quot;Documentaci&oacute;n&quot; del men&uacute;. </li>
+  <li>Seleccionar la opci&oacute;n &quot;Exportar Agenda&quot;, con lo que se 
+    generar&aacute; un archivo Excel con todos los datos de los clientes y de 
+    las entidades externas asociadas a los clientes.</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="proyecto_uoct">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/inc"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/mantenedorDispositivos"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/ayuda"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/comunes"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/inventario"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/recursos"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/eiv"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/mensaje"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/mantenedorSistemas"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/foro"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/ventas"/>
+        <property name="context-root" value="proyecto_uoct"/>
+        <property name="java-output-path" value="/proyecto_uoct/build/classes"/>
+    </wb-module>
+</project-modules>

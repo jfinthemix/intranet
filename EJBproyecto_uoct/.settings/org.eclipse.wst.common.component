@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EJBproyecto_uoct">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <property name="java-output-path" value="/EJBproyecto_uoct/build/classes"/>
+        <property name="ClientProject" value="EJBproyecto_uoctClient"/>
+        <property name="ClientJARURI" value="EJBproyecto_uoctClient.jar"/>
+    </wb-module>
+</project-modules>

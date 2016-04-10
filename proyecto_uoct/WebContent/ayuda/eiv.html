@@ -1,0 +1,599 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ayuda- EIV</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="estiloAyuda.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Modulo EISTU </h1>
+<ol>
+  <li><a href="#EISTU">EISTU</a> 
+    <ul>
+      <li><a href="#registrarEIV">Registrar EISTU</a></li>
+      <li><a href="#editarEIV">Editar EISTU</a></li>
+      <li><a href="#buscarEIV">Buscar EISTU</a></li>
+    </ul>
+  </li>
+  <li>Flujos vehiculares 
+    <ul>
+      <li><a href="#regFlujos">Registrar Flujos</a></li>
+      <li><a href="#eliminarFlujos">Eliminar Flujos</a></li>
+      <li><a href="#buscarFlujos">Buscar Flujos</a></li>
+    </ul>
+  </li>
+  <li>Bit&aacute;cora
+    <ul>
+      <li><a href="#registrarBitacora">Registrar Bit&aacute;cora</a></li>
+      <li><a href="#eliminarBitacora">Eliminar Bit&aacute;cora.</a></li>
+      <li><a href="#aprobarRechazar">Aprobar o rechazar EISTU</a></li>
+      <li><a href="#envioEmail">Env&iacute;o de Email de Vencimiento.</a></li>
+    </ul>
+  </li>
+  <li>Comunas </li>
+  <ul>
+    <li><a href="#agregarComuna">Agregar Comuna</a></li>
+    <li><a href="#eliminarComuna">Eliminar Comuna</a></li>
+  </ul>
+  <li>Tipos de EISTU 
+    <ul>
+      <li><a href="#agregarTipoEIV">Agregar Tipos de EISTU</a></li>
+      <li><a href="#eliminarTipoEIV">Eliminar Tipo de EISTU</a></li>
+    </ul>
+    <hr>
+  </li>
+</ol>
+<h1><a name="EISTU"></a>1.EISTU </h1>
+<p align="justify">El procedimiento realizado en UOCT sobre los EISTU(o EISTU) 
+  se puede graficar de la siguiente forma:</p>
+<p align="justify"><img src="img/DIAG_EISTU2.jpg" width="500" height="711"></p>
+<p align="justify">De acuerdo a este procedimiento, un EISTU puede tener los siguientes 
+  estados:</p>
+<ul>
+  <li>Ingresado: Cuando un estudio reci&eacute;n ha llegado a la UOCT y se mantiene 
+    as&iacute; hasta que se realiza una revisi&oacute;n sobre &eacute;l y se emite 
+    una respuesta.</li>
+  <li>En observaci&oacute;n:Cuando se ha emitido alguna respuesta de parte de 
+    la UOCT en la cual se hacen observaciones al estudio y se espera sean corregidas 
+    en la ventanilla &uacute;nica.</li>
+  <li>Aprobado por UOCT: Un EISTU est&aacute; en este estado cuando la UOCT emite 
+    una carta indicando la aprobaci&oacute;n del estudio.</li>
+  <li>Rechazado por UOCT: Un EISTU est&aacute; en este estado cuando la UOCT emite 
+    una carta indicando el rechazo del estudio.</li>
+</ul>
+<p>Adem&aacute;s de estos estados, la ventanilla &uacute;nica de SEREMITT puede 
+  emitir documentos en los cuales se aprueba o rechaza el estudio( adem&aacute;s 
+  puede emitir documentos en los cuales se indican las medidas que se deben tomar 
+  sobre un estudio, lo que se denomina IFT), debido a esto se deben manejar dos 
+  estados m&aacute;s:</p>
+<ul>
+  <li>Aprobado por SEREMITT.</li>
+  <li>Rechazado por SEREMITT.</li>
+</ul>
+<p align="justify">El proceso de cambio de estado de un EISTU, ya sea con respecto 
+  a UOCT( primeros 4 estados mencionados) o en SEREMITT ( &uacute;ltimos 2 estados 
+  mencionados), es controlado por medio del ingreso de bit&aacute;coras que registran 
+  el historial de un estudio.(<a href="#bitacora">ver registro de bit&aacute;cora</a>)</p>
+<p align="justify">&nbsp;</p>
+<blockquote> 
+  <p><a name="registrarEIV">Registrar EISTU</a> (Restringido a personal autorizado)</p>
+</blockquote>
+<ol>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Registrar EISTU&quot; en la secci&oacute;n 
+      &quot;EISTU&quot; del men&uacute; de la Intranet.</li>
+    <li>Indicar los datos del nuevo EISTU. Los datos que se deben registrar en 
+      este formulario son: 
+      <ol>
+        <ul>
+          <li>T&Iacute;TULO DEL EISTU: Este es un identificador del EISTU.</li>
+          <li>DOCUMENTO ORIGINAL: Corresponde al documento f&iacute;sico que llega 
+            a la UOCT, el cual debe haber sido registrado previamente en el sistema 
+            de documentaci&oacute;n de la INTRANET. Para poder el registro del 
+            documento al EISTU que se est&aacute; registrando, se debe pulsar 
+            el link &quot;Buscar Documento&quot;, con lo que se abrir&aacute; 
+            una ventana con un formulario para buscar documentos. Se debe realizar 
+            la busqueda y seleccionar el documento, con lo que se cerrar&aacute; 
+            la ventana de b&uacute;squeda de documentos y aparecer&aacute; el 
+            nombre del documento en los campos del formulario de registro de EISTU.</li>
+          <li>TIPO DE ESTUDIO: Corresponde a una clasificaci&oacute;n del estudio 
+            en alguno de los tipos previamente definidos( se selecciona el tipo 
+            desde una lista de opciones disponibles)</li>
+          <li>FECHA DE PRESENTACION: Fecha en la cual el estudio fue presentado 
+            a la SEREMITT.</li>
+          <li>ENV&Iacute;O SEREMITT: Fecha en la cual se envi&oacute; el estudio 
+            desde la SEREMITT a la UOCT.</li>
+          <li>FECHA DE INGRESO A LA UOCT: Fecha en la cual se recibi&oacute; el 
+            estudio.</li>
+          <li>FECHA DE VENCIMIENTO: Fecha tope para responder la evaluaci&oacute;n 
+            del estudio.</li>
+          <li>COMUNA: Comuna en donde se realizar&aacute;n las obras correspondientes 
+            al estudio.</li>
+          <li>DIRECCI&Oacute;N: Lugar exacto de las obras.</li>
+          <li>REDES INVOLUCRADAS: Lista de las obras que se ver&aacute;n afectadas 
+            por las obras. Para ingresarlas se debe digitar el n&uacute;mero de 
+            la red y presionar el bot&oacute;n agregar correspondiente. Con esto 
+            se anexa al la lista de redes involucradas.</li>
+          <li>N&ordm; DE ESTACIONAMIENTOS: Unidad para dimensionar la obra.</li>
+          <li>CONSULTOR: Persona encargada del estudio.</li>
+          <li>EMPRESA DEL CONSULTOR: Nombre de la empresa a la cual pertenece 
+            el consultor.</li>
+          <li>ENCARGADO DEL EISTU: Ingeniero de UOCT encargado de la revisi&oacute;n 
+            del estudio( Solamente puede ser una persona del &aacute;rea de ingrenier&iacute;a).</li>
+        </ul>
+      </ol>
+    </li>
+    <li>Para terminar el registro del EISTU, se debe optar por una de las dos 
+      opciones: 
+      <ol>
+        <ul>
+          <li>Registrar el EISTU y Enviar EMAIL: Con esto se ingresan los datos 
+            del EISTU y se muestra una interfaz para enviar un email de notificaci&oacute;n 
+            de ingreso del estudio. En esta pantalla se muestra el asunto del 
+            correo, el remitente y una lista de ingenieros de UOCT entre los cuales 
+            es posible seleccionar los destinatarios del correo.( En caso que 
+            el usuario que est&aacute; registrando el estudio no tenga registrada 
+            su direcci&oacute;n de correo entre sus datos personales, no ser&aacute; 
+            posible enviar el correo).</li>
+          <li>Registrar el EISTU SIN enviar EMAIL: Solamente se hace registro 
+            del estudio.</li>
+        </ul>
+      </ol>
+    </li>
+    <li>.El estudio recibir&aacute; autom&aacute;ticamente un n&uacute;mero de 
+      identificaci&oacute;n una vez que ha sido registrado, n&uacute;mero que 
+      se asigna secuencialmente.</li>
+  </ol>
+</ol>
+<blockquote> 
+  <p><a name="editarEIV">Editar EISTU</a> (Restringido a personal autorizado)</p>
+</blockquote>
+<ol>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Editar EISTU&quot; en la secci&oacute;n 
+      &quot;EISTU&quot; del men&uacute; de la Intranet.</li>
+    <li>Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+      el bot&oacute;n &quot;Buscar&quot;. Los par&aacute;metros disponibles para 
+      buscar EISTU son: 
+      <ol>
+        <ul>
+          <li>C&oacute;digo del EISTU: N&uacute;mero identificador del estudio.</li>
+          <li>Palabra clave: Cualquier palabra que se encuentre en el t&iacute;tulo 
+            del estudio.</li>
+          <li>Fecha de Vencimiento.Se debe indicar un rango de fechas entre los 
+            cuales se encuentre el estudio.</li>
+          <li>Estado: Cualquiera de los estados posibles para un estudio( Ingresado, 
+            en observaci&oacute;n, Aprobado, Rechazado).</li>
+          <li>Estado en SEREMITT: Si est&aacute; aprobado o rechazado por la SEREMITT.</li>
+          <li>Ingeniero encargado: Persona del &aacute;rea de ingenier&iacute;a 
+            a cargo de la evaluaci&oacute;n del estudio.</li>
+          <li>Comuna.Comuna en donde se realizar&aacute;n las obras correspondientes 
+            al estudio.</li>
+          <li>Red involucrada: Cualquiera de las redes afectadas por el estudio.</li>
+          <li>Consultor: Empresa o persona autora del estudio.</li>
+        </ul>
+      </ol>
+    </li>
+    <li>Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+      de la b&uacute;squeda. Para cada EISTU listado se muestran distintas opciones, 
+      entre las que se encuentra: Editar EISTU, Admin. Flujos,Admin. Bit&aacute;cora, 
+      Despachar EISTU, Registrar Reingreso, Aprobar/Rechazar,Enviar Email.</li>
+    <li>Al seleccionar la opci&oacute;n Editar EISTU se muestra un formulario 
+      para editar los datos. Registrar los cambios deseados y presionar el bot&oacute;n 
+      &quot;Guardar los cambios&quot;.</li>
+    <li>Otra opci&oacute;n para editar los datos del EISTU es realizar una Busqueda 
+      de EISTU y en el detalle del EISTU deseado acceder a la edici&oacute;n del 
+      EISTU por medio de un link que aparece a la derecha de los datos del EISTU 
+      (solo en caso de que sea un usuario autorizado a editar el EISTU).</li>
+  </ol>
+</ol>
+<blockquote> 
+  <p><a name="buscarEIV">Buscar EISTU</a> (Restringido a personal autorizado)</p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Buscar EISTU&quot; en la secci&oacute;n 
+      &quot;EISTU&quot; del men&uacute; de la Intranet.</li>
+    <li>Ingresar los par&aacute;metros de b&uacute;squeda de EISTU. Los par&aacute;metros 
+      disponibles para buscar EISTU son: 
+      <ol>
+        <ul>
+          <li>C&oacute;digo del EISTU: N&uacute;mero identificador del estudio.</li>
+          <li>Palabra clave: Cualquier palabra que se encuentre en el t&iacute;tulo 
+            del estudio.</li>
+          <li>Fecha de Vencimiento.Se debe indicar un rango de fechas entre los 
+            cuales se encuentre el estudio.</li>
+          <li>Estado: Cualquiera de los estados posibles para un estudio( Ingresado, 
+            en observaci&oacute;n, Aprobado, Rechazado).</li>
+          <li>Estado en SEREMITT: Si est&aacute; aprobado o rechazado por la SEREMITT.</li>
+          <li>Ingeniero encargado: Persona del &aacute;rea de ingenier&iacute;a 
+            a cargo de la evaluaci&oacute;n del estudio.</li>
+          <li>Comuna.Comuna en donde se realizar&aacute;n las obras correspondientes 
+            al estudio.</li>
+          <li>Red involucrada: Cualquiera de las redes afectadas por el estudio.</li>
+          <li>Consultor: Empresa o persona autora del estudio.</li>
+        </ul>
+      </ol>
+    </li>
+    <li>Presionar el bot&oacute;n &quot;buscar&quot;, con lo que se mostrar&aacute; 
+      una lista con los estudios que coinciden con los par&aacute;metros ingresados. 
+      SI NO INGRESA PARAMETROS SE LISTAR&Aacute;N TODOS LOS ESTUDIOS, lo que puede 
+      hacer engorrosa la b&uacute;squeda.</li>
+    <li>Seleccionar el EISTU que se desea conocer en detalle desde la lista de 
+      EISTU coincidentes con los par&aacute;metros de b&uacute;squeda, por medio 
+      de un click en el c&oacute;digo del EISTU.</li>
+    <li>Se mostrar&aacute; el detalle del EISTU seleccionado junto con opciones 
+      para ver en una ventana distinta el Detalle del EISTU y la lista de bit&aacute;coras, 
+      el Detalle del EISTU y el detalle de las bit&aacute;coras,el Detalle del 
+      EISTU con el Detalle de las bit&aacute;coras y los flujos del EISTU. Dentro 
+      del mismo detalle del EISTU se muestran los flujos asociados al EISTU y 
+      una lista de las bit&aacute;coras, cada una con un link para ver el detalle 
+      de ella.</li>
+    <li>De acuerdo a los permisos del usuario se pueden mostrar en el mismo detalle 
+      de EISTU las opciones para editar los datos del EISTU, para administrar 
+      las bit&aacute;coras,administrar flujos vehiculares del EISTU, Despachar 
+      EISTU, Reingresar EISTU,Aprobar/Rechazar el EISTU.</li>
+  </ol>
+</blockquote>
+<hr>
+<h1>2. Flujos vehiculares </h1>
+<blockquote> 
+  <p><a name="regFlujos">Registrar Flujos</a>(Restringido a personal autorizado)</p>
+  <blockquote> 
+    <p>Para registrar los flujos vehiculares asociados a un EISTU se puede realizar 
+      por dos formas. </p>
+    <p>La primera forma es:</p>
+  </blockquote>
+  <ol>
+    <li>Realizar la operaci&oacute;n <strong>Registrar EISTU.</strong></li>
+    <li>Posteriormente al ingreso del EISTU se mostrar&aacute; el formulario para 
+      ingresar los flujos asociados al EISTU recientemente ingresado.</li>
+    <li>Cada vez que se ingrese una medici&oacute;n de flujos vehiculares se mantendr&aacute;n 
+      los datos ingresados en el formulario para facilitar el ingreso de las posteriores 
+      mediciones de flujos. 
+      <p>La segunda forma es:</p>
+    </li>
+    <li>Una vez que el EISTU ha sido registrado, seleccionar la opci&oacute;n &quot;Editar 
+      EISTU&quot; en la secci&oacute;n EISTU del men&uacute;.</li>
+    <li>Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+      el bot&oacute;n &quot;Buscar&quot;.(<a href="#buscarEIV">ver Buscar EISTU</a>)</li>
+    <li>Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+      de la b&uacute;squeda. Para cada EISTU listado se muestran distintas opciones, 
+      entre las que se encuentra: Editar EISTU, Admin. Flujos,Admin. Bit&aacute;cora, 
+      Agregar Bit&aacute;cora y,Enviar Email de Vencimiento.</li>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. Flujos&quot;.</li>
+    <li>Registrar los flujos en el formulario que se muestra.</li>
+    <li>Cada vez que se ingrese una medici&oacute;n de flujos vehiculares se mantendr&aacute;n 
+      los datos ingresados en el formulario para facilitar el ingreso de las posteriores 
+      mediciones de flujos.</li>
+  </ol>
+  <p><a name="eliminarFlujos">Eliminar Flujos</a> (Restringido a personal autorizado)</p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Editar EISTU&quot; en la secci&oacute;n 
+      EISTU del men&uacute;.</li>
+    <li>Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar el 
+      bot&oacute;n &quot;Buscar&quot;.</li>
+    <li>Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+      de la b&uacute;squeda. Para cada EISTU listado se muestran distintas opciones, 
+      entre las que se encuentra: Editar EISTU, Admin. Flujos,Admin. Bit&aacute;cora, 
+      Despachar EISTU, Registrar Reingreso, Aprobar/Rechazar,Enviar Email.</li>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. Flujos&quot;.</li>
+    <li>Cada flujo vehicular de la lista que se muestra en pantalla posee un bot&oacute;n 
+      &quot;eliminar&quot;, con lo que se eliminar&aacute; solamente el flujo 
+      correspondiente al bot&oacute;n cliqueado.</li>
+  </ol>
+  <p><a name="buscarFlujos">Buscar Flujos</a> (Restringido a personal autorizado)</p>
+</blockquote>
+<ol>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Buscar Flujos&quot; en la secci&oacute;n 
+      EISTU en el men&uacute; de la intranet.</li>
+    <li>Ingresar los par&aacute;metros de b&uacute;squeda de flujos y presionar 
+      el bot&oacute;n &quot;buscar&quot;.</li>
+    <li>El resultado de la b&uacute;squeda se listar&aacute; a continuaci&oacute;n, 
+      ofreciendo la opci&oacute;n de conocer el EISTU asociado con cada uno de los 
+      flujos listados.</li>
+  </ol>
+</ol>
+<hr>
+<h1><a name="bitacora"></a>3.Bit&aacute;cora </h1>
+<ol>
+  <blockquote> 
+    <p><a name="registrarBitacora">Registrar bit&aacute;cora</a>.(Restringido 
+      a personal autorizado)</p>
+    <p>Para registrar una bit&aacute;cora para un EISTU se deben seguir los siguientes 
+      pasos:</p>
+  </blockquote>
+  <ol>
+    <ol>
+      <li>El registro de una bit&aacute;cora del EISTU debe ser realizado posteriormente 
+        al despacho de la documentaci&oacute;n en el &quot;m&oacute;dulo de documentaci&oacute;n&quot; 
+        de la intranet.</li>
+      <li>Seleccionar la opci&oacute;n &quot;Editar EISTU&quot; en la secci&oacute;n 
+        &quot;EISTU&quot; del men&uacute; de la Intranet.</li>
+      <li>Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+        el bot&oacute;n &quot;Buscar&quot;.(<a href="#buscarEIV">ver Buscar EISTU</a>)</li>
+      <li>Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+        de la b&uacute;squeda. Para cada EISTU listado se muestran distintas opciones, 
+        entre las que se encuentra: Editar EISTU, Admin. Flujos,Admin. Bit&aacute;cora, 
+        Agregar Bit&aacute;cora y Enviar Email.</li>
+      <li>Seleccionar la opci&oacute;n Agregar Bit&aacute;cora.</li>
+      <li>Se mostrar&aacute; un formulario en el cual se debe escoger el tipo 
+        de bit&aacute;cora a ingresar, el t&iacute;tulo de la bit&aacute;cora( 
+        el cual se modifica autom&aacute;ticamente dependiendo del tipo de bit&aacute;cora 
+        seleccionada), la fecha de la bit&aacute;cora, la descripci&oacute;n y 
+        adem&aacute;s se puede asociar con alg&uacute;n documento previamente 
+        ingresado en el sistema de documentaci&oacute;n.</li>
+      <li>Algunas consideraciones a tener al momento de ingresar una bit&aacute;cora, 
+        calsificadas por tipo de bit&aacute;cora,son:<br>
+        <ol>
+          <ul>
+            <li>PRIMERA REVISI&Oacute;N: 
+              <ul>
+                <ul>
+                  <li><em>Implica un cambio de estado en el EISTU en cuesti&oacute;n 
+                    a &quot;En Observaci&oacute;n</em>&quot;.</li>
+                  <li><em>El t&iacute;tulo de la bit&aacute;cora ser&aacute; seleccionado 
+                    por el sistema.</em></li>
+                  <li><em>Solamente se puede asociar un documento emitido por 
+                    UOCT registrado en el sistema de documentaci&oacute;n( nunca 
+                    un documento entrante).</em></li>
+                  <li><em>S&oacute;lamente se puede ingresar una primera revisi&oacute;n.</em></li>
+                </ul>
+              </ul>
+            </li>
+            <li>REINGRESO DE DOCUMENTACI&Oacute;N: 
+              <ul>
+                <ul>
+                  <li><em>No implica cambio en el estado del EISTU.</em></li>
+                  <li><em>El t&iacute;tulo de la bit&aacute;cora ser&aacute; seleccionado 
+                    por el sistema.</em></li>
+                  <li><em>Solamente se puede asociar un documento recibido por 
+                    UOCT y registrado previamente al sistema de documentaci&oacute;n 
+                    de la intranet(nunca un documento emitido por UOCT).</em></li>
+                  <li><em>Solamente se puede registrar si existe una primera revisi&oacute;n 
+                    ingresada para el mismo EISTU.</em></li>
+                </ul>
+              </ul>
+            </li>
+            <li>DESPACHO DE DOCUMENTACI&Oacute;N: 
+              <ul>
+                <ul>
+                  <li><em>No implica cambio en el estado del EISTU.</em></li>
+                  <li><em>El t&iacute;tulo de la bit&aacute;cora ser&aacute; seleccionado 
+                    por el sistema.</em></li>
+                  <li><em>Solamente se puede asociar un documento emitido por 
+                    UOCT registrado en el sistema de documentaci&oacute;n( nunca 
+                    un documento entrante).</em></li>
+                  <li><em>Se puede efectuar en cualquier etapa del ciclo de vida 
+                    del EISTU.</em> </li>
+                </ul>
+              </ul>
+            </li>
+            <li>APROBACI&Oacute;N POR UOCT: </li>
+            <ul>
+              <ul>
+                <li><em>El aprobar un EISTU cambiar&aacute; el estado del EISTU 
+                  a &quot;Aprobado&quot;.</em></li>
+                <li><em>El t&iacute;tulo de la bit&aacute;cora ser&aacute; seleccionado 
+                  por el sistema.</em></li>
+                <li><em>S&oacute;lo se puede ingresar una aprobaci&oacute;n cuando 
+                  no ha sio ingresada otra anteriormente para el mismo EISTU.</em></li>
+              </ul>
+            </ul>
+          </ul>
+          <BR>
+          <ul>
+            <li>RECHAZO POR UOCT: </li>
+            <ul>
+              <ul>
+                <li><em>El rechazar un EISTU cambiar&aacute; el estado del EISTU 
+                  a &quot;Rechazado&quot;.</em></li>
+                <li><em>El t&iacute;tulo de la bit&aacute;cora ser&aacute; seleccionado 
+                  por el sistema.</em></li>
+                <li><em>S&oacute;lo se puede ingresar un rechazo cuando no ha 
+                  sido ingresado otro anteriormente para el mismo EISTU.</em></li>
+              </ul>
+            </ul>
+            <BR>
+            <li>APROBACI&Oacute;N POR SEREMITT 
+              <ul>
+                <ul>
+                  <li> <em>El aprobar un EISTU por la SEREMITT cambiar&aacute; 
+                    el estado del EISTU a &quot;Aprobado por SEREMITT&quot;, sin 
+                    embargo este estado es independiente del estado en que se 
+                    encuentre el estudio en UOCT.</em></li>
+                  <li><em>El t&iacute;tulo de la bit&aacute;cora ser&aacute; seleccionado 
+                    por el sistema.</em></li>
+                  <li><em>S&oacute;lo se puede ingresar una aprobaci&oacute;n 
+                    cuando no ha sio ingresada otra anteriormente para el mismo 
+                    EISTU.</em></li>
+                </ul>
+              </ul>
+            </li>
+            <li>RECHAZO POR SEREMITT 
+              <ul>
+                <ul>
+                  <li> <em>El rechazar un EISTU por la SEREMITT cambiar&aacute; 
+                    el estado del EISTU a &quot;Rechazado por SEREMITT&quot;, 
+                    sin embargo este estado es independiente del estado en que 
+                    se encuentre el estudio en UOCT.</em></li>
+                  <li><em>El t&iacute;tulo de la bit&aacute;cora ser&aacute; seleccionado 
+                    por el sistema.</em></li>
+                  <li><em>S&oacute;lo se puede ingresar un rechazo cuando no ha 
+                    sido ingresado otro anteriormente para el mismo EISTU.</em></li>
+                </ul>
+              </ul>
+            </li>
+            <li><em>OTRO...</em> 
+              <ul>
+                <ul>
+                  <li><em>Esta posibilidad existe con el objetivo de ingresar 
+                    cualquier tipo de bit&aacute;cora al historial del estudio, 
+                    ya sea un CONSOLIDADO DE SEREMITT, una MEDIDA DE MITIGACI&Oacute;N, 
+                    o lo que se requiera.</em></li>
+                  <li><em>Se deja el t&iacute;tulo a libre disposici&oacute;n 
+                    del usuario.</em></li>
+                  <li><em>Puede ser ingresado en absolutamente cualquier etapa 
+                    del proceso.</em></li>
+                </ul>
+                <p>&nbsp;</p>
+              </ul>
+            </li>
+          </ul>
+        </ol>
+        <p><em>Se puede acceder al mismo formulario de ingreso de bit&aacute;cora 
+          desde el detalle de un EISTU.(<a href="#buscarEIV">ver Buscar EISTU</a>)</em></p>
+      </li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><a name="editarBitacora">Editar Bit&aacute;cora.</a> (Restringido a personal 
+      autorizado)</p>
+    <p> El editar una bit&aacute;cora implica editar los datos que la describen, 
+      para lo cual se requiere seguir los siguientes pasos:</p>
+    <p> 1. Seleccionar la opci&oacute;n &quot;Editar EISTU&quot; en la secci&oacute;n 
+      &quot;EISTU&quot; del men&uacute; de la Intranet.<br>
+      2. Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+      el bot&oacute;n &quot;Buscar&quot;.<br>
+      3. Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+      de la b&uacute;squeda. Para cada EISTU listado se muestran distintas opciones, 
+      entre las que se encuentra: Editar EISTU, Admin. Flujos,Admin. Bit&aacute;cora, 
+      Registrar Bit&aacute;cora y Enviar Email.<br>
+      4. Seleccionar la opci&oacute;n &quot;Admin. Bit&aacute;cora&quot;.<br>
+      5. Se listar&aacute;n todas las bit&aacute;coras del EISTU cada una con 
+      su respectiva opci&oacute;n &quot;editar&quot;. Cliquee &quot;editar&quot; 
+      al lado de la bit&aacute;cora que desea editar, con lo que se mostrar&aacute; 
+      un formulario en el cual se puede editar tanto la fecha de la bit&aacute;cora, 
+      la descripci&oacute;n o cambiar el documento asociado a la bit&aacute;cora. 
+      Luego de realizar los cambios correspondientes se debe presionar el bot&oacute;n 
+      &quot;Actualizar bit&aacute;cora&quot;, con lo que se guardar&aacute;n los 
+      cambios.</p>
+    <p>Tambi&eacute;n se puede llegar a la edici&oacute;n de bit&aacute;cora por 
+      medio de la pantalla de detalle de EISTU<a href="#busarEISTU">(ver buscar 
+      EISTU</a>), en la cual, solo si se tienen los permisos correspondientes, 
+      se mostrar&aacute; un enlace para &quot;administrar bit&aacute;cora&quot;.</p>
+    <p><a name="eliminarBitacora">Eliminar Bit&aacute;cora.</a> (Restringido a 
+      personal autorizado)</p>
+    <p> Primera forma de eliminar bit&aacute;cora:</p>
+    <p> 1. Seleccionar la opci&oacute;n &quot;Editar EISTU&quot; en la secci&oacute;n 
+      &quot;EISTU&quot; del men&uacute; de la Intranet.<br>
+      2. Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+      el bot&oacute;n &quot;Buscar&quot;.<br>
+      3. Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+      de la b&uacute;squeda. Para cada EISTU listado se muestran distintas opciones, 
+      entre las que se encuentra: Editar EISTU, Admin. Flujos,Admin. Bit&aacute;cora, 
+      Registrar Bit&aacute;cora y Enviar Email.<br>
+      4. Seleccionar la opci&oacute;n &quot;Admin. Bit&aacute;cora&quot;.<br>
+      5. Se listar&aacute;n todas las bit&aacute;coras del EISTU cada una con 
+      su respectiva opci&oacute;n &quot;eliminar &quot;. Cliquee &quot;eliminar&quot; 
+      al lado de la bit&aacute;cora que desea eliminar.</p>
+    <p> Segunda forma de eliminar bit&aacute;cora:</p>
+    <p> 1. Seleccionar la opci&oacute;n &quot;Buscar EISTU&quot; en la secci&oacute;n 
+      &quot;EISTU&quot; del men&uacute; de la Intranet.<br>
+      2. Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+      el bot&oacute;n &quot;Buscar&quot;.<br>
+      3. Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+      de la b&uacute;squeda.Para cara EISTU de la lista aparecer&aacute; un link 
+      para ver el detalle del EISTU.En el detalle del EISTU se muestran opciones 
+      de acuerdo a los permisos del usuario.<br>
+      4. Seleccionar la opci&oacute;n &quot;Admin. Bit&aacute;cora&quot;.<br>
+      5. Se listar&aacute;n todas las bit&aacute;coras del EISTU cada una con 
+      su respectiva opci&oacute;n &quot;eliminar &quot;. Cliquee &quot;eliminar&quot; 
+      al lado de la bit&aacute;cora que desea eliminar.<br>
+    </p>
+  </ol>
+  <blockquote> 
+    <p><a name="envioEmail">Env&iacute;o de Email de Vencimiento.</a> (Restringido 
+      a personal autorizado)</p>
+  </blockquote>
+  <blockquote> 
+    <blockquote> 
+      <p>Primera forma de enviar Email:</p>
+    </blockquote>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Editar EISTU&quot; en la secci&oacute;n 
+        &quot;EISTU&quot; del men&uacute; de la Intranet.</li>
+      <li>Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+        el bot&oacute;n &quot;Buscar&quot;.</li>
+      <li>Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+        de la b&uacute;squeda. Para cada EISTU listado se muestran distintas opciones, 
+        entre las que se encuentra: Editar EISTU, Admin. Flujos,Admin. Bit&aacute;cora, 
+        Despachar EISTU, Registrar Reingreso, Aprobar/Rechazar,Enviar Email.</li>
+      <li>Seleccionar la opci&oacute;n &quot;Enviar EISTU&quot;.</li>
+      <li>Se mostrar&aacute; una pantalla con los datos del Email. El usuario 
+        debe indicar los destinatarios del email y presionar el bot&oacute;n &quot;enviar&quot;.</li>
+    </ol>
+    <blockquote> 
+      <p>Segunda forma de enviar Email:</p>
+    </blockquote>
+    <ol>
+      <li>Seleccionar la opci&oacute;n &quot;Buscar EISTU&quot; en la secci&oacute;n 
+        &quot;EISTU&quot; del men&uacute; de la Intranet.</li>
+      <li>Ingresar los par&aacute;metros de b&uacute;squeda de EISTU y presionar 
+        el bot&oacute;n &quot;Buscar&quot;.</li>
+      <li>Se mostrar&aacute; una lista con los EISTU coincidentes con los par&aacute;metros 
+        de la b&uacute;squeda.Para cara EISTU de la lista aparecer&aacute; un 
+        link para ver el detalle del EISTU.En el detalle del EISTU se muestran 
+        opciones de acuerdo a los permisos del usuario.</li>
+      <li>Seleccionar la opci&oacute;n &quot;Enviar EISTU&quot;.</li>
+      <li>Se mostrar&aacute; una pantalla con los datos del Email. El usuario 
+        debe indicar los destinatarios del email y presionar el bot&oacute;n &quot;enviar&quot;.</li>
+    </ol>
+  </blockquote>
+</ol>
+<hr>
+<h1>4. Comunas </h1>
+<blockquote> 
+  <p><a name="agregarComuna">Agregar Comuna</a> (Restringido a personal autorizado)</p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. Comunas&quot; en la secci&oacute;n 
+      EISTU del men&uacute; de la intranet.</li>
+    <li>Registrar el nombre de la nueva comuna y presionar el bot&oacute;n &quot;Registrar&quot;.</li>
+    <li>La lista de comunas ser&aacute; actualizada y se mostrar&aacute; un mensaje 
+      con la confirmaci&oacute;n del registro de la comuna.</li>
+  </ol>
+  <p><a name="eliminarComuna">Eliminar Comuna</a> (Restringido a personal autorizado)</p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. Comunas&quot; en la secci&oacute;n 
+      EISTU del men&uacute; de la intranet.</li>
+    <li>En la lista de comunas que se muestra en pantalla aparece la opci&oacute;n 
+      &quot;eliminar&quot; para cada una de ellas. Cliquee &quot;eliminar&quot; 
+      al lado de la comuna que desea eliminar.</li>
+    <li>La lista de comunas ser&aacute; actualizada y se mostrar&aacute; un mensaje 
+      con la confirmaci&oacute;n de la eliminaci&oacute;n de la comuna.La comuna 
+      s&oacute;lo ser&aacute; eliminada si no existe ning&uacute;n EISTU asociada 
+      a ella.</li>
+  </ol>
+</blockquote>
+<hr>
+<h1>5. Tipos de EISTU </h1>
+<p>Un tipo de EISTU es una clasificaci&oacute;n de estudios, lo que permite describir 
+  con m&aacute;s detalle el objetivo del estudio. El administrador de los EISTU 
+  puede hacer clasificaciones de acuerdo a su propio orden, sin embargo no puede 
+  eliminar tipos de EISTU a los cuales hayan asociados uno o m&aacute;s estudios.</p>
+<blockquote> 
+  <p><a name="agregarTipoEIV">Agregar Tipo de EISTU</a> (Restringido a personal 
+    autorizado)</p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. Tipos de EISTU&quot; en la secci&oacute;n 
+      &quot;EISTU&quot; del men&uacute; de la intranet.</li>
+    <li>Ingresar el tipo de EISTU y presionar el bot&oacute;n &quot;agregar&quot;.</li>
+    <li>Se actualizar&aacute; la lista de Tipos de EISTU en la pantalla y aparecer&aacute; 
+      una confirmaci&oacute;n del registro del tipo de EISTU.</li>
+  </ol>
+  <p><a name="eliminarTipoEIV">Eliminar Tipo de EISTU</a> (Restringido a personal 
+    autorizado)</p>
+  <ol>
+    <li>Seleccionar la opci&oacute;n &quot;Admin. tipos de EISTU&quot; en la secci&oacute;n 
+      EISTU del men&uacute; de la intranet.</li>
+    <li>En la lista de tipos de EISTU que se muestra en pantalla aparece la opci&oacute;n 
+      &quot;eliminar&quot; para cada una de ellos. Cliquee &quot;eliminar&quot; 
+      al lado del tipo de EISTU que desea eliminar.</li>
+    <li>La lista de tipos de EISTU ser&aacute; actualizada y se mostrar&aacute; 
+      un mensaje con la confirmaci&oacute;n de la eliminaci&oacute;n del tipo 
+      de EISTU.El tipo de EISTU s&oacute;lo ser&aacute; eliminado si no existe ning&uacute;n 
+      EISTU asociada a &eacute;l. </li>
+  </ol>
+  <p>&nbsp;</p>
+</blockquote>
+</body>
+</html>

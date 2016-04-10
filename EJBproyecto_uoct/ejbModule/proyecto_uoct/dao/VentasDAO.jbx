@@ -1,0 +1,10 @@
+[PropertyInfo]
+dao,proyecto_uoct.dao.VentasDAO,false,false, , ,false,<default>
+estadosVtas,java.util.List,false,false, , ,true,<default>
+sdf,java.text.SimpleDateFormat,false,false, , ,false,<default>
+UF,float,false,false, , ,true,<default>
+[IconNames]
+
+
+
+
